@@ -1,0 +1,28 @@
+title: itsmaxymoo
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Welcome to itsmaxymoo's site!
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://itsmaxymoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: itsmaxymoo
+og_image: "null"
+
+# Build settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+timezone: America/New_York
+
+exclude:
+  - LICENSES.md
+  - README.md
+  - TODO.md
+  - "*.sh"
+  - .vscode/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/

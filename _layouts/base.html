@@ -5,15 +5,15 @@
 		<!-- Meta -->
 		<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 		<meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <meta name="generator" content="Jekyll">
-        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-        <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta name="generator" content="Jekyll">
+		<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+		<link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
 
 		<!-- OG Meta -->
-        <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-        <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-        <meta property="og:type" content="website">
+		<meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+		<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+		<meta property="og:type" content="website">
 		<meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}">
 		<meta property="og:image" content="{{ site.baseurl }}assets/{{ site.og_image }}">
 
@@ -30,7 +30,7 @@
 
 		<!-- Assets -->
 		<!-- <script type="text/javascript" src="{{ site.baseurl }}assets/scripts/main.js"></script> -->
-        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/main.css" />
 	</head>
 	<body>
 		{{ page.content }}

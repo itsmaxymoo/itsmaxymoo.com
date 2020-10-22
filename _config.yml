@@ -12,9 +12,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 timezone: America/New_York
+markdown: kramdown
+sass:
+  style: compressed
 
 exclude:
-  - LICENSES.md
+  - LICENSE.md
   - README.md
   - TODO.md
   - "*.sh"

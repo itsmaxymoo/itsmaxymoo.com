@@ -1,0 +1,47 @@
+@import "bulma/utilities/initial-variables";
+@import "bulma/utilities/functions";
+@font-face {
+    font-family: 'Titillium';
+    src: url(/assets/TitilliumWeb-Regular.ttf) format('truetype');
+}
+
+$color-background: #000000;
+$color-background-invert: $color-background;
+$color-text: #FFFFFF;
+$color-text-invert: $color-text;
+$color-accent: #3ed8ff;
+$color-accent-invert: $color-accent;
+
+// Bulma overrides
+$color-background-invert: findColorInvert($color-background-invert);
+$color-text-invert: findColorInvert($color-text-invert);
+$color-accent-invert: findColorInvert($color-accent-invert);
+
+@import "bulma/utilities/derived-variables";
+$newColors: (
+	"color-background":($color-background, $color-background-invert),
+	"color-text":($color-text, $color-text-invert),
+	"color-accent":($color-accent, $color-accent-invert)
+);
+
+$colors: map-merge($colors, $newColors);
+$family-primary: 'Titillium', sans-serif;
+
+// Custom styles
+.site-title{
+	@extend .title;
+	$border-radius: 4mm;
+	background-color: $color-accent;
+	border: $border-radius solid $color-accent;
+	border-top-width: $border-radius / 2;
+	border-bottom-width: $border-radius / 2;
+}
+
+.title-hero{
+	background-image: linear-gradient(0deg, rgba($color-background, 1) 0%, rgba($color-background, 0) 30%), url(/assets/images/site-background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: $color-background;
+}

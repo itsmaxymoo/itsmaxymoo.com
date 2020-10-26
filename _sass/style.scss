@@ -13,12 +13,15 @@ $color-accent: #3ed8ff;
 $color-accent-invert: $color-accent;
 $color-accent-secondary: #ffffff;
 $color-accent-secondary-invert: $color-accent-secondary;
+$color-accent-tertiary: #ff802c;
+$color-accent-tertiary-invert: $color-accent-tertiary;
 
 // Bulma overrides
 $color-background-invert: findColorInvert($color-background-invert);
 $color-text-invert: findColorInvert($color-text-invert);
 $color-accent-invert: findColorInvert($color-accent-invert);
 $color-accent-secondary-invert: findColorInvert($color-accent-secondary-invert);
+$color-accent-tertiary-invert: findColorInvert($color-accent-tertiary-invert);
 
 @import "bulma/utilities/derived-variables";
 $newColors: (
@@ -46,12 +49,15 @@ html{
 }
 
 .title-hero{
-	background-image: linear-gradient(0deg, rgba($color-background, 1) 0%, rgba($color-background, 0) 30%), url(/assets/images/site-background.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: $color-background;
+
+	&-main{
+		background-image: linear-gradient(0deg, rgba($color-background, 1) 0%, rgba($color-background, 0) 30%), url(/assets/images/site-background.jpg);
+	}
 }
 
 @mixin title-hero-text($text-color){
@@ -75,4 +81,9 @@ html{
 .title-hero-text-secondary{
 	@extend .subtitle;
 	@include title-hero-text($color-accent-secondary);
+}
+
+.title-hero-text-tertiary{
+	@extend .subtitle;
+	@include title-hero-text($color-accent-tertiary);
 }

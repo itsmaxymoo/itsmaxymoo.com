@@ -7,6 +7,9 @@ url: "https://itsmaxymoo.github.io" # the base hostname & protocol for your site
 github_username: itsmaxymoo
 og_image: "null"
 
+collections:
+  - projects
+
 # Build settings
 plugins:
   - jekyll-sitemap

@@ -2,12 +2,14 @@
 layout: base
 ---
 
+{% assign projects = site.projects | sort: "order" %}
+
 <section class="hero title-hero is-fullheight" id="page-section-top">
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title-hero-text-primary">
 				<span>
-					itsmaxymoo
+					{{ site.title }}
 				</span>
 			</h1>
 			<p class="title-hero-text-secondary mt-1">
@@ -20,13 +22,39 @@ layout: base
 
 	<div class="hero-foot">
 		<div class="container has-text-centered has-text-grey-lighter mb-3">
-			<a class="a-button" href="#page-section-test-content">
+			<a class="a-button" href="#{{ projects[0].title | slugify }}">
 				<i class="las la-chevron-circle-down la-4x"></i>
 			</a>
 		</div>
 	</div>
 </section>
 
-<section class="section" id="page-section-test-content">
-	//
+{% for project in projects %}
+
+<section class="hero is-warning" id="{{ project.title | slugify }}">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title">
+				{{ project.title }}
+			</h1>
+			<h2 class="subtitle is-size-3">
+				<a href="{{ project.link }}">
+					<span>Project site</span>
+					<span class="icon is-small">
+						<i class="las la-external-link-alt"></i>
+					</span>
+				</a>
+			</h2>
+		</div>
+	</div>
 </section>
+
+<div class="columns is-mobile is-centered">
+	<div class="column is-10-mobile is-10-tablet is-8">
+		<p>
+			{{ project.content }}
+		</p>
+	</div>
+</div>
+
+{% endfor %}

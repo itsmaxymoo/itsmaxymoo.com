@@ -13,15 +13,12 @@ $color-accent: #3ed8ff;
 $color-accent-invert: $color-accent;
 $color-accent-secondary: #ffffff;
 $color-accent-secondary-invert: $color-accent-secondary;
-$color-accent-tertiary: #ff802c;
-$color-accent-tertiary-invert: $color-accent-tertiary;
 
 // Bulma overrides
 $color-background-invert: findColorInvert($color-background-invert);
 $color-text-invert: findColorInvert($color-text-invert);
 $color-accent-invert: findColorInvert($color-accent-invert);
 $color-accent-secondary-invert: findColorInvert($color-accent-secondary-invert);
-$color-accent-tertiary-invert: findColorInvert($color-accent-tertiary-invert);
 
 @import "bulma/utilities/derived-variables";
 $newColors: (
@@ -81,9 +78,4 @@ html{
 .title-hero-text-secondary{
 	@extend .subtitle;
 	@include title-hero-text($color-accent-secondary);
-}
-
-.title-hero-text-tertiary{
-	@extend .subtitle;
-	@include title-hero-text($color-accent-tertiary);
 }

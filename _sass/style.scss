@@ -34,6 +34,10 @@ $newColors: (
 $colors: map-merge($colors, $newColors);
 $family-primary: 'Titillium', sans-serif;
 
+$link: $color-accent-tertiary;
+$ink-visited: $link;
+$link-focus-border: $link;
+
 // Custom styles
 html{
 	scroll-behavior: smooth;

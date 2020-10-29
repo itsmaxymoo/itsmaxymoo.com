@@ -34,7 +34,7 @@ layout: base
 {% assign next_i = forloop.index0 | plus: 1 %}
 {% assign last_i = forloop.index0 | minus: 1 %}
 
-<section class="hero title-hero is-fullheight" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%), url({{ site.baseurl }}assets/images/{{ project.image }});" id="{{ project.title | slugify }}">
+<section class="hero title-hero is-fullheight is-{{ project.color }} is-bold" id="{{ project.title | slugify }}">
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title-hero-text-primary">

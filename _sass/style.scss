@@ -13,19 +13,23 @@ $color-accent: #3ed8ff;
 $color-accent-invert: $color-accent;
 $color-accent-secondary: #ffffff;
 $color-accent-secondary-invert: $color-accent-secondary;
+$color-accent-tertiary: #ff802c;
+$color-accent-tertiary-invert: $color-accent-tertiary;
 
 // Bulma overrides
 $color-background-invert: findColorInvert($color-background-invert);
-$color-text-invert: findColorInvert($color-text-invert);
+$color-text-invert: $color-text-invert;
 $color-accent-invert: findColorInvert($color-accent-invert);
 $color-accent-secondary-invert: findColorInvert($color-accent-secondary-invert);
+$color-accent-tertiary-invert: findColorInvert($color-accent-tertiary-invert);
 
 @import "bulma/utilities/derived-variables";
 $newColors: (
 	"color-background":($color-background, $color-background-invert),
 	"color-text":($color-text, $color-text-invert),
 	"color-accent":($color-accent, $color-accent-invert),
-	"color-accent-secondary":($color-accent-secondary, $color-accent-secondary-invert)
+	"color-accent-secondary":($color-accent-secondary, $color-accent-secondary-invert),
+	"color-accent-tertiary":($color-accent-tertiary, $color-accent-tertiary-invert)
 );
 
 $colors: map-merge($colors, $newColors);
@@ -62,8 +66,9 @@ html{
 }
 
 @mixin title-hero-text($text-color){
-	color: $black-ter;
 	& span{
+		color: #333;
+
 		$border-radius: 0.3em;
 		$highlight-size-multiplier: 0.35;
 

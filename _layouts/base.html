@@ -41,8 +41,18 @@
 				{{ content }}
 			</main>
 
-			<footer class="footer has-background-color-background">
-				<p class="has-text-centered">
+			<footer class="footer has-background-color-background has-text-centered">
+				<p>
+					This site is open-source.
+					<a href="https://github.com/itsmaxymoo/itsmaxymoo.github.io">
+						Edit this site
+						<span class="icon">
+							<i class="las la-external-link-alt"></i>
+						</span>
+					</a>
+				</p>
+
+				<p>
 					Site last updated on {{ site.time | date_to_long_string }}
 				</p>
 			</footer>

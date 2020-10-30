@@ -5,6 +5,20 @@ layout: base
 {% assign projects = site.projects | sort: "order" %}
 
 <section class="hero title-hero-main is-fullheight" id="">
+	<div class="hero-head">
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-end">
+					{% for project in projects %}
+						<a class="navbar-item" href="{{ site.baseurl }}#{{ project.title | slugify }}">
+							{{ project.title }}
+						</a>
+					{% endfor %}
+				</div>
+			</div>
+		</nav>
+	</div>
+
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title-hero-text-primary">

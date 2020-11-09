@@ -36,9 +36,14 @@ layout: base
 
 	<div class="hero-foot">
 		<div class="container has-text-centered has-text-grey-lighter mb-3">
+			<a class="a-button" href="https://github.com/{{ site.github_username }}">
+				<i class="lab la-github la-4x"></i>
+			</a>
 			<a class="a-button" href="#{{ projects[0].title | slugify }}">
 				<i class="las la-chevron-circle-down la-4x"></i>
 			</a>
+
+			<i class="las la-chevron-circle-down la-4x" style="visibility: hidden;"></i>
 		</div>
 	</div>
 </section>

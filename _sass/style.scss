@@ -76,6 +76,8 @@ html{
 		border: $border-radius solid $text-color;
 		border-top-width: $border-radius * $highlight-size-multiplier;
 		border-bottom-width: $border-radius * $highlight-size-multiplier;
+
+		box-decoration-break: clone;
 	}
 }
 
@@ -87,4 +89,9 @@ html{
 .title-hero-text-secondary{
 	@extend .subtitle;
 	@include title-hero-text($color-accent-secondary);
+}
+
+.project-image{
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px 3px #4D4D4D;
 }

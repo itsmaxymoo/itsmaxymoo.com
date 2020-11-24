@@ -28,7 +28,7 @@ layout: base
 			</h1>
 			<p class="title-hero-text-secondary mt-1">
 				<span>
-					I create websites and software
+					{{ site.description }}
 				</span>
 			</p>
 		 </div>
@@ -36,8 +36,14 @@ layout: base
 
 	<div class="hero-foot">
 		<div class="container has-text-centered has-text-grey-lighter mb-3">
+			<a class="a-button" href="{{ site.social_github }}">
+				<i class="lab la-github la-4x"></i>
+			</a>
 			<a class="a-button" href="#{{ projects[0].title | slugify }}">
 				<i class="las la-chevron-circle-down la-4x"></i>
+			</a>
+			<a class="a-button" href="{{ site.social_pypi }}">
+				<i class="lab la-python la-4x"></i>
 			</a>
 		</div>
 	</div>
@@ -48,20 +54,27 @@ layout: base
 {% assign next_i = forloop.index0 | plus: 1 %}
 {% assign last_i = forloop.index0 | minus: 1 %}
 
-<section class="hero title-hero is-fullheight is-{{ project.color }} is-bold" id="{{ project.title | slugify }}">
+<section class="hero title-hero is-fullheight is-{% cycle 'dark', 'light' %} is-bold" id="{{ project.title | slugify }}">
 	<div class="hero-body">
-		<div class="container">
-			<h1 class="title-hero-text-primary">
-				<span>
-					{{ project.title }}
-				</span>
-			</h1>
-			<p class="title-hero-text-secondary mt-1">
-				<span>
-					{{ project.description }}
-				</span>
-			</p>
-		 </div>
+		<div class="columns is-desktop is-vcentered" style="width: 100%;">
+			<div class="column is-half">
+				<div class="container">
+					<h1 class="title-hero-text-primary">
+						<span>
+							{{ project.title }}
+						</span>
+					</h1>
+					<p class="title-hero-text-secondary mt-1">
+						<span>
+							{{ project.description }}
+						</span>
+					</p>
+				 </div>
+			</div>
+			<div class="column is-half">
+				<img src="{{ site.baseurl }}assets/images/{{ project.image }}" class="project-image">
+			</div>
+		</div>
 	</div>
 
 	<div class="hero-foot">

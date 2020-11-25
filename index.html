@@ -36,14 +36,14 @@ layout: base
 
 	<div class="hero-foot">
 		<div class="container has-text-centered has-text-grey-lighter mb-3">
-			<a class="a-button" href="{{ site.social_github }}">
-				<i class="lab la-github la-4x"></i>
+			<a class="a-button" href="{{ site.social_pypi }}">
+				<i class="lab la-python la-4x"></i>
 			</a>
 			<a class="a-button" href="#{{ projects[0].title | slugify }}">
 				<i class="las la-chevron-circle-down la-4x"></i>
 			</a>
-			<a class="a-button" href="{{ site.social_pypi }}">
-				<i class="lab la-python la-4x"></i>
+			<a class="a-button" href="{{ site.social_github }}">
+				<i class="lab la-github la-4x"></i>
 			</a>
 		</div>
 	</div>
@@ -53,8 +53,17 @@ layout: base
 
 {% assign next_i = forloop.index0 | plus: 1 %}
 {% assign last_i = forloop.index0 | minus: 1 %}
+{% capture button_color %}{% cycle 'grey-lighter', 'darker' %}{% endcapture %}
 
 <section class="hero title-hero is-fullheight is-{% cycle 'dark', 'light' %} is-bold" id="{{ project.title | slugify }}">
+	<div class="hero-head">
+		<div class="has-text-right has-text-{{ button_color }}">
+			<a class="a-button" href="{{ site.baseurl }}#">
+				<i class="las la-angle-double-up la-2x"></i>
+			</a>
+		</div>
+	</div>
+
 	<div class="hero-body">
 		<div class="columns is-desktop is-vcentered" style="width: 100%;">
 			<div class="column is-half">
@@ -78,8 +87,8 @@ layout: base
 	</div>
 
 	<div class="hero-foot">
-		<div class="container has-text-centered has-text-grey-lighter mb-3">
-			<a class="a-button" href="{{ project.link }}">
+		<div class="container has-text-centered has-text-{{ button_color }} mb-3">
+			<a class="a-button" {% if project.link_enabled %}href="{{ project.link }}"{% else %}title="Coming soon" style="cursor: default;"{% endif %}>
 				<i class="las la-external-link-alt la-4x"></i>
 			</a>
 			<a class="a-button" href="#{% if forloop.index < forloop.length %}{{ projects[next_i].title | slugify }}{% else %}{{ project.title | slugify }}{% endif %}">

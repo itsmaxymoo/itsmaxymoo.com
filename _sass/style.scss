@@ -78,6 +78,7 @@ html{
 		border-bottom-width: $border-radius * $highlight-size-multiplier;
 
 		box-decoration-break: clone;
+		line-height: 35px;
 	}
 }
 
@@ -93,5 +94,10 @@ html{
 
 .project-image{
 	border-radius: 10px;
-	box-shadow: 3px 3px 5px 3px #4D4D4D;
+	box-shadow: 3px 3px 5px 3px #131313;
+	max-height: 70vh;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

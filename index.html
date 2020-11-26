@@ -78,6 +78,13 @@ layout: base
 							{{ project.description }}
 						</span>
 					</p>
+					{% if project.install %}
+						<p class="title-hero-text-terminal">
+							<span>
+								{{ project.install }}
+							</span>
+						</p>
+					{% endif %}
 				 </div>
 			</div>
 			<div class="column is-half">

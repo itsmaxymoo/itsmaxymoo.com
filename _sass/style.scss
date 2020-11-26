@@ -4,6 +4,10 @@
     font-family: 'Titillium';
     src: url(/assets/TitilliumWeb-Regular.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'DejaVuSansMono';
+    src: url(/assets/DejaVuSansMono.ttf) format('truetype');
+}
 
 $color-background: #000000;
 $color-background-invert: $color-background;
@@ -15,6 +19,8 @@ $color-accent-secondary: #ffffff;
 $color-accent-secondary-invert: $color-accent-secondary;
 $color-accent-tertiary: #ff802c;
 $color-accent-tertiary-invert: $color-accent-tertiary;
+$color-terminal: rgb(4, 24, 43);
+$color-terminal-invert: $color-terminal;
 
 // Bulma overrides
 $color-background-invert: findColorInvert($color-background-invert);
@@ -22,6 +28,7 @@ $color-text-invert: $color-text-invert;
 $color-accent-invert: findColorInvert($color-accent-invert);
 $color-accent-secondary-invert: findColorInvert($color-accent-secondary-invert);
 $color-accent-tertiary-invert: findColorInvert($color-accent-tertiary-invert);
+$color-terminal-invert: findColorInvert($color-terminal-invert);
 
 @import "bulma/utilities/derived-variables";
 $newColors: (
@@ -29,7 +36,8 @@ $newColors: (
 	"color-text":($color-text, $color-text-invert),
 	"color-accent":($color-accent, $color-accent-invert),
 	"color-accent-secondary":($color-accent-secondary, $color-accent-secondary-invert),
-	"color-accent-tertiary":($color-accent-tertiary, $color-accent-tertiary-invert)
+	"color-accent-tertiary":($color-accent-tertiary, $color-accent-tertiary-invert),
+	"color-terminal":($color-terminal, $color-terminal-invert)
 );
 
 $colors: map-merge($colors, $newColors);
@@ -90,6 +98,17 @@ html{
 .title-hero-text-secondary{
 	@extend .subtitle;
 	@include title-hero-text($color-accent-secondary);
+}
+
+.title-hero-text-terminal{
+	@extend .subtitle;
+	@include title-hero-text($color-terminal);
+
+	font-family: 'DejaVuSansMono', sans-serif;
+	
+	& span{
+		color: #dfdfdf !important;
+	}
 }
 
 .project-image{

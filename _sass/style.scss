@@ -73,7 +73,7 @@ html{
 	}
 }
 
-@mixin title-hero-text($text-color){
+@mixin title-hero-text($text-color, $line-height){
 	& span{
 		color: #333;
 
@@ -86,23 +86,23 @@ html{
 		border-bottom-width: $border-radius * $highlight-size-multiplier;
 
 		box-decoration-break: clone;
-		line-height: 35px;
+		line-height: $line-height;
 	}
 }
 
 .title-hero-text-primary{
 	@extend .title;
-	@include title-hero-text($color-accent);
+	@include title-hero-text($color-accent, 70px);
 }
 
 .title-hero-text-secondary{
 	@extend .subtitle;
-	@include title-hero-text($color-accent-secondary);
+	@include title-hero-text($color-accent-secondary, 35px);
 }
 
 .title-hero-text-terminal{
 	@extend .subtitle;
-	@include title-hero-text($color-terminal);
+	@include title-hero-text($color-terminal, 35px);
 
 	font-family: 'DejaVuSansMono', sans-serif;
 	

@@ -3,7 +3,7 @@ email: contact@itsmaxymoo.com
 description: >- # this means to ignore newlines until "baseurl:"
   I create websites and software
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://itsmaxymoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://itsmaxymoo.com" # the base hostname & protocol for your site, e.g. http://example.com
 social_github: "https://github.com/itsmaxymoo"
 social_pypi: "https://pypi.org/user/itsmaxymoo"
 og_image: "images/site-background.jpg"

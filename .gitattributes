@@ -1,4 +1,5 @@
 _sass/bulma/* linguist-vendored=true
+_sass/bulma/* linguist-vendored
 _sass/bulma-theme/* linguist-vendored=true
 assets/leaflet/* linguist-vendored=true
 Gemfile linguist-vendored=true

@@ -1,6 +1,6 @@
-# itsmaxymoo.github.io Licenses
+# itsmaxymoo.com Licenses
 
-Copyright (c) 2020 Max Loiacono.
+Copyright (c) 2020-2021 Max Loiacono.
 
 ## Special Licenses
 

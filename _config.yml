@@ -1,5 +1,6 @@
 title: itsmaxymoo
 email: contact@itsmaxymoo.com
+author: Max Loiacono
 description: >- # this means to ignore newlines until "baseurl:"
   I create websites and software
 baseurl: "/" # the subpath of your site, e.g. /blog

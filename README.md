@@ -1,2 +1,2 @@
-# itsmaxymoo.github.io
+# itsmaxymoo.com
 Personal site.

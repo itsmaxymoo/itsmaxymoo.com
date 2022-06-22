@@ -1,1 +1,2 @@
-bundle exec jekyll serve --port 8008 --livereload
+#!/bin/bash
+jekyll serve --port 8008 --livereload

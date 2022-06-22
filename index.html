@@ -2,23 +2,7 @@
 layout: base
 ---
 
-{% assign projects = site.projects | sort: "order" %}
-
 <section class="hero title-hero-main is-fullheight" id="">
-	<div class="hero-head">
-		<nav class="navbar">
-			<div class="container">
-				<div class="navbar-end">
-					{% for project in projects %}
-						<a class="navbar-item" href="{{ site.baseurl }}#{{ project.title | slugify }}">
-							{{ project.title }}
-						</a>
-					{% endfor %}
-				</div>
-			</div>
-		</nav>
-	</div>
-
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title-hero-text-primary">
@@ -36,10 +20,10 @@ layout: base
 
 	<div class="hero-foot">
 		<div class="container has-text-centered has-text-grey-lighter mb-3">
-			<a class="a-button" href="{{ site.social_pypi }}">
-				<i class="lab la-python la-4x"></i>
+			<a class="a-button" href="{{ site.social_linkedin }}">
+				<i class="lab la-linkedin la-4x"></i>
 			</a>
-			<a class="a-button" href="#{{ projects[0].title | slugify }}">
+			<a class="a-button" href="#footer">
 				<i class="las la-chevron-circle-down la-4x"></i>
 			</a>
 			<a class="a-button" href="{{ site.social_github }}">
@@ -48,64 +32,3 @@ layout: base
 		</div>
 	</div>
 </section>
-
-{% for project in projects %}
-
-{% assign next_i = forloop.index0 | plus: 1 %}
-{% assign last_i = forloop.index0 | minus: 1 %}
-{% capture button_color %}{% cycle 'grey-lighter', 'darker' %}{% endcapture %}
-
-<section class="hero title-hero is-fullheight is-{% cycle 'dark', 'light' %} is-bold" id="{{ project.title | slugify }}">
-	<div class="hero-head">
-		<div class="has-text-right has-text-{{ button_color }}">
-			<a class="a-button" href="{{ site.baseurl }}#">
-				<i class="las la-angle-double-up la-2x"></i>
-			</a>
-		</div>
-	</div>
-
-	<div class="hero-body">
-		<div class="columns is-multiline is-centered is-vcentered" style="margin-left: 0; margin-right: 0;">
-			<div class="column is-half is-full-mobile">
-				<div class="container">
-					<h1 class="title-hero-text-primary">
-						<span>
-							{{ project.title }}
-						</span>
-					</h1>
-					<p class="title-hero-text-secondary mt-1">
-						<span>
-							{{ project.description }}
-						</span>
-					</p>
-					{% if project.install %}
-						<p class="title-hero-text-terminal">
-							<span>
-								{{ project.install }}
-							</span>
-						</p>
-					{% endif %}
-				 </div>
-			</div>
-			<div class="column is-half is-full-mobile">
-				<img src="{{ site.baseurl }}assets/images/{{ project.image }}" class="project-image">
-			</div>
-		</div>
-	</div>
-
-	<div class="hero-foot">
-		<div class="container has-text-centered has-text-{{ button_color }} mb-3">
-			<a class="a-button" {% if project.link_enabled %}href="{{ project.link }}"{% else %}title="Coming soon" style="cursor: default;"{% endif %}>
-				<i class="las la-external-link-alt la-4x"></i>
-			</a>
-			<a class="a-button" href="#{% if forloop.index < forloop.length %}{{ projects[next_i].title | slugify }}{% else %}{{ project.title | slugify }}{% endif %}">
-				<i class="las {% if forloop.index < forloop.length %}la-chevron-circle-down{% else %}la-minus-circle{% endif %} la-4x"></i>
-			</a>
-			<a class="a-button" href="#{% unless forloop.index0 == 0 %}{{ projects[last_i].title | slugify }}{% endunless %}">
-				<i class="las la-chevron-circle-up la-4x"></i>
-			</a>
-		</div>
-	</div>
-</section>
-
-{% endfor %}

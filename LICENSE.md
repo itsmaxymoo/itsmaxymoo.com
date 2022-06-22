@@ -1,6 +1,6 @@
 # itsmaxymoo.com Licenses
 
-Copyright (c) 2020-2021 itsmaxymoo.
+Copyright (c) 2020-2022 itsmaxymoo.
 
 ## Special Licenses
 
@@ -8,7 +8,7 @@ Copyright (c) 2020-2021 itsmaxymoo.
 | --- | --- | --- |
 | `_sass/bulma/*` | Jeremy Thomas (Bulma) | [MIT License](https://github.com/jgthms/bulma/blob/master/LICENSE) |
 | `_sass/bulma.sass` | Jeremy Thomas (Bulma) | [MIT License](https://github.com/jgthms/bulma/blob/master/LICENSE) |
-| `assets/images/site-background.jpg` | itsmaxymoo | All Rights Reserved |
+| `assets/site-background.jpg` | itsmaxymoo | All Rights Reserved |
 | `assets/DejaVuSansMono.ttf` | Bitstream | [Read here](https://dejavu-fonts.github.io/License.html) |
 | `assets/TitilliumWeb-Regular.ttf` | [See authors](https://fonts.google.com/specimen/Titillium+Web#about) | [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) |
 

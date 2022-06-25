@@ -5,8 +5,8 @@ description: I create websites and software
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://itsmaxymoo.com" # the base hostname & protocol for your site, e.g. http://example.com
 social_github: "https://github.com/itsmaxymoo"
-social_pypi: "https://pypi.org/user/itsmaxymoo"
-social_linkedin: "https://www.linkedin.com/in/max-loiacono"
+social_linkedin: "https://www.linkedin.com/in/max-loiacono/"
+main_image: "assets/site-background.jpg"
 
 # collections:
 #   - projects

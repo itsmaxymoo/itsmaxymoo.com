@@ -1,11 +1,9 @@
 title: Max Loiacono | itsmaxymoo
-email: max.loiacono@protonmail.com
 author: Max Loiacono
 description: I create websites and software
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://itsmaxymoo.com" # the base hostname & protocol for your site, e.g. http://example.com
-social_github: "https://github.com/itsmaxymoo"
-social_linkedin: "https://www.linkedin.com/in/max-loiacono/"
+
 main_image: "assets/site-background.jpg"
 
 # collections:

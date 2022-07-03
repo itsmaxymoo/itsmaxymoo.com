@@ -1,0 +1,28 @@
+@charset "utf-8"
+
+// MDB theme
+@import "maxs-dark-bulma"
+
+// Import initial bulma variables
+@import "bulma/utilities/initial-variables"
+@import "bulma/utilities/functions"
+
+
+// Custom font
+@font-face
+    font-family: 'Titillium'
+    src: url(/assets/TitilliumWeb-Regular.ttf) format('truetype')
+
+
+// Import the rest of bulma
+@import "bulma/_all"
+
+// Custom image hero
+.hero-with-image
+	background-position: center center
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-size: cover
+	background-color: $mdb-background
+
+	background-image: url(/assets/site-background.jpg)

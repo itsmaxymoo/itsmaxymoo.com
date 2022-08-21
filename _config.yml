@@ -6,8 +6,8 @@ url: "https://itsmaxymoo.com" # the base hostname & protocol for your site, e.g.
 
 main_image: "assets/site-background.jpg"
 
-# collections:
-#   - projects
+collections:
+  - dev_projects
 
 # Build settings
 timezone: America/New_York

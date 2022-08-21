@@ -1,3 +1,35 @@
 ---
 layout: front_page
 ---
+
+{% for p in site.dev_projects %}
+
+<section class="hero is-{% cycle 'black', 'dark', 'light' %}">
+
+	<div class="hero-body">
+		<p class="title">
+			{{ p.title }}
+		</p>
+		<p class="subtitle">
+			{{ p.content }}
+		</p>
+	</div>
+
+	<div class="hero-foot">
+		<div class="container has-text-centered mb-3">
+			<a href="{{ p.homepage }}">
+				<i class="las la-external-link-alt la-4x"></i>
+			</a>
+
+			{% unless p.source == "" %}
+				<a href="{{ p.source }}">
+					<i class="las la-code la-4x"></i>
+				</a>
+			{% endunless %}
+
+		</div>
+	</div>
+
+</section>
+
+{% endfor %}

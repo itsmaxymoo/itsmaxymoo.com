@@ -1,10 +1,29 @@
 ---
-layout: front_page
+layout: base
 ---
 
-{% for p in site.dev_projects %}
+{% assign dev_projects = site.dev_projects | sort: "order" %}
 
-<section class="hero is-{% cycle 'black', 'dark', 'light' %}">
+<section class="hero hero-with-image is-medium">
+
+	<div class="hero-body">
+		<h1 class="title has-text-white">{{ site.title }}</h1>
+		<h3 class="subtitle has-text-grey-light">{{ site.description }}</h3>
+	</div>
+
+	<div class="hero-foot">
+		<div class="container has-text-centered has-text-grey-darker mb-3">
+			<a class="a-button" href="#{{ dev_projects[0].title | slugify }}">
+				<i class="las la-chevron-circle-down la-4x"></i>
+			</a>
+		</div>
+	</div>
+
+</section>
+
+{% for p in dev_projects %}
+
+<section class="hero is-{% cycle 'black', 'dark', 'light' %}" id="{{ p.title | slugify }}">
 
 	<div class="hero-body">
 		<p class="title">

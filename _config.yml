@@ -3,6 +3,7 @@ author: Max Loiacono
 description: I create websites and software
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://itsmaxymoo.com" # the base hostname & protocol for your site, e.g. http://example.com
+repo_url: "https://github.com/itsmaxymoo/itsmaxymoo.com"
 
 main_image: "assets/site-background.jpg"
 

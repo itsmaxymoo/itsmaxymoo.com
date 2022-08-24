@@ -4,9 +4,9 @@
 - name: GitHub
   url: https://github.com/itsmaxymoo
   icon_class: lab la-github
-- name: PyPi
-  url: https://pypi.org/user/itsmaxymoo/
-  icon_class: lab la-python
+# - name: PyPi
+#   url: https://pypi.org/user/itsmaxymoo/
+#   icon_class: lab la-python
 - name: Email
   url: "mailto:max.loiacono@protonmail.com"
   icon_class: las la-envelope

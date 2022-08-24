@@ -13,7 +13,7 @@ layout: base
 
 	<div class="hero-foot">
 		<div class="container has-text-centered has-text-grey-darker mb-3">
-			<a class="a-button" href="#{{ dev_projects[0].title | slugify }}">
+			<a class="a-button" href="#projects">
 				<i class="las la-chevron-circle-down la-4x"></i>
 			</a>
 		</div>
@@ -21,34 +21,56 @@ layout: base
 
 </section>
 
-{% for p in dev_projects %}
+<section class="section">
+	<div class="container">
+		<h2 class="is-size-2 has-text-centered">
+			About Me
+		</h2>
 
-<section class="hero is-{% cycle 'black', 'dark', 'light' %}" id="{{ p.title | slugify }}">
-
-	<div class="hero-body">
-		<p class="title">
-			{{ p.title }}
+		<p class="is-size-5 pt-3 pb-4">
+			Welcome!
 		</p>
-		<p class="subtitle">
-			{{ p.content }}
-		</p>
+
+		<nav class="breadcrumb is-centered is-large">
+			<ul>
+				{% for s in site.data.socials %}
+					<li>
+						<a href="{{ s.url }}">
+							<span class="icon is-small">
+								<i class="{{ s.icon_class }}" aria-hidden="true"></i>
+							</span>
+							<span>{{ s.name }}</span>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
 	</div>
-
-	<div class="hero-foot">
-		<div class="container has-text-centered mb-3">
-			<a href="{{ p.homepage }}">
-				<i class="las la-external-link-alt la-4x"></i>
-			</a>
-
-			{% unless p.source == "" %}
-				<a href="{{ p.source }}">
-					<i class="las la-code la-4x"></i>
-				</a>
-			{% endunless %}
-
-		</div>
-	</div>
-
 </section>
 
-{% endfor %}
+<section class="section" id="projects">
+	<div class="container">
+		<h2 class="is-size-2 has-text-centered pb-5">Projects</h2>
+
+		{% for p in dev_projects %}
+
+			<div class="box">
+				<h3 class="is-size-3 is-underlined">{{ p.title }}</h3>
+
+				<p>
+					{{ p.content }}
+				</p>
+
+				<hr />
+
+				<nav class="breadcrumb is-centered has-bullet-separator">
+					<ul>
+						<li><a href="{{ p.homepage }}">Homepage</a></li>
+						{% if p.source != "" %} <li><a href="{{ p.source }}">Source code</a></li> {% endif %}
+					</ul>
+				</nav>
+			</div>
+
+		{% endfor %}
+	</div>
+</section>

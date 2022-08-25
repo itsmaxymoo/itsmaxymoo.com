@@ -8,8 +8,33 @@
   icon_class: devicon-html5-plain
 - name: Python
   icon_class: devicon-python-plain
+- name: PHP
+  icon_class: devicon-php-plain
+- name: Kotlin
+  icon_class: devicon-kotlin-plain
+- name: Bash
+  icon_class: devicon-bash-plain
+- name: SQL
+  icon_class: las la-database
+- name: JSON
+  icon_class: las la-code
+- name: XML
+  icon_class: las la-code
 
 - name: Git
   icon_class: devicon-git-plain
+- name: Jetbrains IDEs
+  icon_class: devicon-jetbrains-plain
 - name: Linux
   icon_class: devicon-linux-plain
+- name: Debian
+  icon_class: devicon-debian-plain
+- name: Fedora
+  icon_class: devicon-fedora-plain
+- name: Server Admin
+  icon_class: las la-server
+- name: Databases
+  icon_class: las la-database
+
+- name: OSHA 30
+  icon_class: las la-certificate

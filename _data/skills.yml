@@ -1,0 +1,15 @@
+- name: C++
+  icon_class: devicon-cplusplus-plain
+- name: Java
+  icon_class: devicon-java-plain
+- name: JavaScript
+  icon_class: devicon-javascript-plain
+- name: HTML
+  icon_class: devicon-html5-plain
+- name: Python
+  icon_class: devicon-python-plain
+
+- name: Git
+  icon_class: devicon-git-plain
+- name: Linux
+  icon_class: devicon-linux-plain

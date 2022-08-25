@@ -35,6 +35,8 @@
   icon_class: las la-server
 - name: Databases
   icon_class: las la-database
+- name: Jekyll
+  icon_class: las la-code
 
 - name: OSHA 30
   icon_class: las la-certificate

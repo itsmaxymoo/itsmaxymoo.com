@@ -31,3 +31,14 @@ $container-max-width: $tablet
 
 	&:hover
 		color: inherit
+
+// For disabled links
+a.disabled
+	$disabled-color: darken($grey, 7%)
+	pointer-events: auto
+	cursor: not-allowed
+	color: $disabled-color
+
+	&:hover
+		color: $disabled-color
+	

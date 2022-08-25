@@ -1,42 +1,52 @@
-- name: C++
-  icon_class: devicon-cplusplus-plain
-- name: Java
-  icon_class: devicon-java-plain
-- name: JavaScript
-  icon_class: devicon-javascript-plain
-- name: HTML
-  icon_class: devicon-html5-plain
-- name: Python
-  icon_class: devicon-python-plain
-- name: PHP
-  icon_class: devicon-php-plain
-- name: Kotlin
-  icon_class: devicon-kotlin-plain
-- name: Bash
-  icon_class: devicon-bash-plain
-- name: SQL
-  icon_class: las la-database
-- name: JSON
-  icon_class: las la-code
-- name: XML
-  icon_class: las la-code
+- name: Languages
+  items:
+    - name: C++
+      icon_class: devicon-cplusplus-plain
+    - name: Java
+      icon_class: devicon-java-plain
+    - name: JavaScript
+      icon_class: devicon-javascript-plain
+    - name: HTML
+      icon_class: devicon-html5-plain
+    - name: Python
+      icon_class: devicon-python-plain
+    - name: PHP
+      icon_class: devicon-php-plain
+    - name: Kotlin
+      icon_class: devicon-kotlin-plain
+    - name: Bash
+      icon_class: devicon-bash-plain
+    - name: SQL
+      icon_class: las la-database
+    - name: JSON
+      icon_class: las la-code
+    - name: XML
+      icon_class: las la-code
 
-- name: Git
-  icon_class: devicon-git-plain
-- name: Jetbrains IDEs
-  icon_class: devicon-jetbrains-plain
-- name: Linux
-  icon_class: devicon-linux-plain
-- name: Debian
-  icon_class: devicon-debian-plain
-- name: Fedora
-  icon_class: devicon-fedora-plain
-- name: Server Admin
-  icon_class: las la-server
-- name: Databases
-  icon_class: las la-database
-- name: Jekyll
-  icon_class: las la-code
+- name: Technologies
+  items:
+    - name: Apache HTTP Server
+      icon_class: devicon-apache-plain
+    - name: Git
+      icon_class: devicon-git-plain
+    - name: Jetbrains IDEs
+      icon_class: devicon-jetbrains-plain
+    - name: Linux
+      icon_class: devicon-linux-plain
+    - name: Linux (Debian)
+      icon_class: devicon-debian-plain
+    - name: Linux (Fedora)
+      icon_class: devicon-fedora-plain
+    - name: Server Administration
+      icon_class: las la-server
+    - name: Databases
+      icon_class: las la-database
+    - name: Jekyll
+      icon_class: las la-code
+    - name: Open Source Licenses
+      icon_class: las la-gavel
 
-- name: OSHA 30
-  icon_class: las la-certificate
+- name: Certifications
+  items:
+    - name: OSHA 30-Hour (Construction)
+      icon_class: las la-tools

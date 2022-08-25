@@ -12,14 +12,6 @@ include_dev_icons: true
 		<h3 class="subtitle has-text-grey-light">{{ site.description }}</h3>
 	</div>
 
-	<div class="hero-foot">
-		<div class="container has-text-centered has-text-grey mb-3">
-			<a class="a-button" href="#projects">
-				<i class="las la-chevron-circle-down la-4x"></i>
-			</a>
-		</div>
-	</div>
-
 </section>
 
 <section class="section">
@@ -53,49 +45,97 @@ include_dev_icons: true
 			</ul>
 		</nav>
 
-		<div class="box">
-			<h3 class="is-size-4 has-text-centered is-underlined pb-4">
-				Skills and Technologies
-			</h3>
-
-			<div class="columns is-gapless is-multiline is-mobile">
-				{% assign skills_sorted = site.data.skills | sort: "name" %}
-				{% for skill in skills_sorted %}
-					<div class="column is-6-mobile is-3-tablet is-size-5">
-						<span class="icon is-small">
-							<i class="{{ skill.icon_class }}"></i>
-						</span>
-						<span>{{ skill.name }}</span>
-					</div>
-				{% endfor %}
-			</div>
-		</div>
+		<p class="has-text-centered">
+			<a class="a-button" href="#projects">
+				<i class="las la-angle-double-down la-2x"></i>
+			</a>
+		</p>
 	</div>
 </section>
 
 <section class="section" id="projects">
 	<div class="container">
-		<h2 class="is-size-2 has-text-centered pb-5">Projects</h2>
-
-		{% for p in dev_projects %}
-
-			<div class="box">
-				<h3 class="is-size-3 is-underlined">{{ p.title }}</h3>
-
-				<p>
-					{{ p.content }}
-				</p>
+		<div class="columns">
+			<div class="column is-4 is-full-mobile">
+				<h2 class="is-size-2 has-text-centered-mobile">Skills</h2>
 
 				<hr />
 
-				<nav class="breadcrumb is-centered has-bullet-separator">
-					<ul>
-						<li><a href="{{ p.homepage }}">Homepage</a></li>
-						{% if p.source != "" %} <li><a href="{{ p.source }}">Source code</a></li> {% endif %}
-					</ul>
-				</nav>
+				<div class="columns is-mobile is-multiline is-centered">
+					{% for skilltype in site.data.skills %}
+
+						<div class="column box">
+							<div class="content">
+								<span class="is-size-5">{{ skilltype.name }}:</span>
+		
+								<ul>
+									{% assign skills_sorted = skilltype.items | sort: "name" %}
+									{% for skill in skills_sorted %}
+										<li>
+											<span class="icon is-small">
+												<i class="{{ skill.icon_class }}" aria-hidden="true"></i>
+											</span>
+											<span>{{ skill.name }}</span>
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+
+					{% endfor %}
+				</div>
 			</div>
 
-		{% endfor %}
+			<div class="column">
+				<h2 class="is-size-2 has-text-centered pb-5">Projects</h2>
+
+				{% for p in dev_projects %}
+
+					<div class="box">
+						<h3 class="is-size-3 is-underlined">{{ p.title }}</h3>
+
+						<p>
+							{{ p.content }}
+						</p>
+
+						<hr />
+
+						<nav class="breadcrumb is-centered has-bullet-separator">
+							<ul>
+								<li>
+									<a href="{{ p.homepage }}">
+										<span class="icon is-small">
+											<i class="las la-external-link-alt" aria-hidden="true"></i>
+										</span>
+										<span>Homepage</span>
+									</a>
+								</li>
+								<li>
+									{% if p.source != "" %}
+										<a href="{{ p.source }}">
+											<span class="icon is-small">
+												<i class="las la-code-branch" aria-hidden="true"></i>
+											</span>
+											<span>Source</span>
+										</a>
+									{% else %}
+										<a class="disabled">
+											<span class="icon is-small">
+												<i class="las la-ban" aria-hidden="true"></i>
+											</span>
+											<span
+												title="The source code for this project is not available to the public. Please contact me with any questions.">
+												Closed source
+											</span>
+										</a>
+									{% endif %}
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </section>

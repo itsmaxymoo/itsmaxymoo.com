@@ -17,22 +17,27 @@
     elev: 3898
   - name: Cornell
     elev: 3857
+    completed: 2022-06-26
   - name: Plateau
     elev: 3835
+    completed: 2022-06-04
   - name: Table
     elev: 3825
   - name: Peekamoose
     elev: 3819
   - name: Sugarloaf
     elev: 3783
+    completed: 2021-07-06
   - name: Wittenberg
     elev: 3782
+    completed: 2022-06-26
   - name: Southwest Hunter
     elev: 3753
   - name: Balsam Lake
     elev: 3729
   - name: Panther
     elev: 3724
+    completed: 2020-06-15
   - name: Lone
     elev: 3700
   - name: Big Indian
@@ -45,6 +50,7 @@
     elev: 3652
   - name: Twin
     elev: 3650
+    completed: 2021-05-15
   - name: Fir
     elev: 3629
   - name: Balsam Cap
@@ -59,6 +65,7 @@
     elev: 3583
   - name: Indian Head
     elev: 3573
+    completed: 2021-05-15
   - name: Sherrill
     elev: 3558
   - name: Vly

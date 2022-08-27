@@ -1,9 +1,9 @@
-- challenge: Catskill 3500s
+- name: Catskill 3500s
   about: ""
   goals:
   - name: Slide
     elev: 4184
-    completed: true
+    completed: 2022-06-26
     completed_winter: false
   - name: Hunter
     elev: 4030

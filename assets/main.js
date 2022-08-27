@@ -18,4 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
+	// Handle message-accordions
+	const messageAccordions = document.querySelectorAll('.message-accordion');
+
+	for(let i = 0; i < messageAccordions.length; i++){
+		const accordion = messageAccordions[i];
+		const button = accordion.querySelector('div.message-header a');
+		const buttonLabel = button.querySelector('span.icon i');
+		const accordionBody = accordion.querySelector('div.message-body');
+
+		button.onclick = function(){
+			accordionBody.classList.toggle('is-hidden');
+			buttonLabel.classList.toggle('la-plus-circle');
+			buttonLabel.classList.toggle('la-minus-circle');
+		};
+	}
+
 });

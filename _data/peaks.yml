@@ -1,0 +1,71 @@
+- challenge: Catskill 3500s
+  about: ""
+  goals:
+  - name: Slide
+    elev: 4184
+    completed: true
+    completed_winter: false
+  - name: Hunter
+    elev: 4030
+  - name: Black Dome
+    elev: 3994
+  - name: Thomas Cole
+    elev: 3953
+  - name: Blackhead
+    elev: 3940
+  - name: West Kill
+    elev: 3898
+  - name: Cornell
+    elev: 3857
+  - name: Plateau
+    elev: 3835
+  - name: Table
+    elev: 3825
+  - name: Peekamoose
+    elev: 3819
+  - name: Sugarloaf
+    elev: 3783
+  - name: Wittenberg
+    elev: 3782
+  - name: Southwest Hunter
+    elev: 3753
+  - name: Balsam Lake
+    elev: 3729
+  - name: Panther
+    elev: 3724
+  - name: Lone
+    elev: 3700
+  - name: Big Indian
+    elev: 3699
+  - name: Friday
+    elev: 3692
+  - name: Rusk
+    elev: 3686
+  - name: Kaaterskill High Peak
+    elev: 3652
+  - name: Twin
+    elev: 3650
+  - name: Fir
+    elev: 3629
+  - name: Balsam Cap
+    elev: 3608
+  - name: Balsam
+    elev: 3607
+  - name: North Dome
+    elev: 3605
+  - name: Bearpen
+    elev: 3587
+  - name: Eagle
+    elev: 3583
+  - name: Indian Head
+    elev: 3573
+  - name: Sherrill
+    elev: 3558
+  - name: Vly
+    elev: 3541
+  - name: Windham High Peak
+    elev: 3525
+  - name: Halcott
+    elev: 3509
+  - name: Rocky
+    elev: 3487

@@ -1,5 +1,12 @@
-- name: Catskill 3500s
-  about: ""
+- name: Catskill 3500
+  description: The Catskills are a sprawling mountain range east of Binghamton, New York.
+    The Catskill 3500 challenge is well known by many as it attempts to summit the
+    largest peaks in the range, but it has some quirks. It used to be that there were
+    thirty-five 3500' peaks, quite easy to remember, but an updated geological
+    survey revealed that Rocky Mountain was actually slightly shorter than 3500'.
+    More recently, two of the peaks, Graham and Doubletop, each located on private
+    property, were closed to the public permanently. This brings the list of true,
+    climbable 3500'ers down to 32. This list contains 33, as it still includes Rocky Mountain.
   goals:
   - name: Slide
     elev: 4184

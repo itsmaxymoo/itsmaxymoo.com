@@ -1,18 +1,12 @@
 ---
-layout: base
+layout: hero
+title_hero_image: flower
+title_hero_title_color: white
+title_hero_subtitle_color: grey-light
 include_dev_icons: true
 ---
 
 {% assign dev_projects = site.dev_projects | sort: "order" %}
-
-<section class="hero hero-with-image is-medium">
-
-	<div class="hero-body">
-		<h1 class="title has-text-white">{{ site.title }}</h1>
-		<h3 class="subtitle has-text-grey-light">{{ site.description }}</h3>
-	</div>
-
-</section>
 
 <section class="section">
 	<div class="container">

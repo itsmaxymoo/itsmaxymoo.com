@@ -15,15 +15,22 @@ $container-max-width: $tablet
 // Import the rest of bulma
 @import "bulma/_all"
 
-// Custom image hero
-.hero-with-image
-	background-position: center center
-	background-repeat: no-repeat
-	background-attachment: fixed
-	background-size: cover
-	background-color: $grey-darker
+// Hero image system
 
-	background-image: url(/assets/site-background.jpg)
+$hero-images: [flower]
+
+@mixin hero-images
+	@each $image in $hero-images
+		&-#{$image}
+			background-position: center center
+			background-repeat: no-repeat
+			background-attachment: fixed
+			background-size: cover
+
+			background-image: url("/assets/background/" + $image + ".jpg")
+
+.hero-image
+	@include hero-images
 
 .a-button
 	color: inherit

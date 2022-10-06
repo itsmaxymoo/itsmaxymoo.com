@@ -50,3 +50,5 @@
   items:
     - name: OSHA 30-Hour (Construction)
       icon_class: las la-tools
+    - name: Amateur Radio Technician (KC3RSZ)
+      icon_class: las la-broadcast-tower

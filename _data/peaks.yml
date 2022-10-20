@@ -186,3 +186,108 @@
     elev: 3895
   - name: Couchsachraga
     elev: 3820
+
+- name: New Hampshire 48
+  description: Home to the White Mountains, New Hampshire has 48 peaks over 4000 feet.
+  goals:
+  - name: Washington
+    elev: 6288
+    completed: 2020-07-16
+  - name: Adams
+    elev: 5774
+  - name: Jefferson
+    elev: 5712
+    completed: 2021-08-09
+  - name: Monroe
+    elev: 5384
+    completed: 2020-07-16
+  - name: Madison
+    elev: 5367
+  - name: Lafayette
+    elev: 5260
+  - name: Lincoln
+    elev: 5089
+  - name: South Twin
+    elev: 4902
+  - name: Carter Dome
+    elev: 4832
+  - name: Moosilauke
+    elev: 4802
+  - name: Eisenhower
+    elev: 4780
+  - name: North Twin
+    elev: 4761
+  - name: Carrigain
+    elev: 4700
+  - name: Bond
+    elev: 4698
+  - name: Middle Carter
+    elev: 4610
+  - name: West Bond
+    elev: 4540
+  - name: Garfield
+    elev: 4500
+  - name: Liberty
+    elev: 4459
+  - name: South Carter
+    elev: 4430
+  - name: Wildcat A
+    elev: 4422
+  - name: Hancock
+    elev: 4420
+  - name: South Kinsman
+    elev: 4358
+  - name: Field
+    elev: 4340
+  - name: Osceola
+    elev: 4340
+  - name: Flume
+    elev: 4328
+  - name: South Hancock
+    elev: 4319
+  - name: Pierce
+    elev: 4310
+  - name: North Kinsman
+    elev: 4293
+  - name: Willey
+    elev: 4285
+  - name: Bondcliff
+    elev: 4265
+  - name: Zealand
+    elev: 4260
+  - name: North Tripyramid
+    elev: 4180
+  - name: Cabot
+    elev: 4170
+  - name: East Osceola
+    elev: 4156
+  - name: Middle Tripyramid
+    elev: 4140
+  - name: Cannon
+    elev: 4100
+    completed: 2021-08-10
+  - name: Hale
+    elev: 4054
+  - name: Jackson
+    elev: 4052
+  - name: Tom
+    elev: 4051
+  - name: Wildcat D
+    elev: 4050
+    completed: 2021-08-10
+  - name: Moriah
+    elev: 4049
+  - name: Passaconaway
+    elev: 4043
+  - name: Owl's Head
+    elev: 4025
+  - name: Galehead
+    elev: 4024
+  - name: Whiteface
+    elev: 4020
+  - name: Waumbek
+    elev: 4006
+  - name: Isolation
+    elev: 4004
+  - name: Tecumseh
+    elev: 4003

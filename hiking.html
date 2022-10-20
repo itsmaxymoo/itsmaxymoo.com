@@ -49,36 +49,38 @@ permalink: /hiking/
 						</a>
 					</div>
 					<div class="message-body is-hidden">
-						<table class="table is-striped is-hoverable is-fullwidth">
-							<thead>
-								<tr>
-									<th>Peak</th>
-									<th>Elevation</th>
-									<th>Completed</th>
-									<th>Winter</th>
-								</tr>
-							</thead>
-							<tbody>
-								{% for goal in challenge.goals %}
+						<div class="table-container">
+							<table class="table is-striped is-hoverable is-fullwidth is-mobile">
+								<thead>
 									<tr>
-										<td>{{ goal.name }}</td>
-										<td>{{ goal.elev }}'</td>
-										<td>
-											{% if goal.completed %}
-												{{ goal.completed | date_to_long_string }}
-											{% else if goal.completed_winter %}
-												{{ goal.completed_winter | date_to_long_string }}
-											{% endif %}
-										</td>
-										<td>
-											{% if goal.completed_winter and goal.completed_winter != false %}
-												{{ goal.completed_winter | date_to_long_string }}
-											{% endif %}
-										</td>
+										<th>Peak</th>
+										<th>Elevation</th>
+										<th>Completed</th>
+										<th>Winter</th>
 									</tr>
-								{% endfor %}
-							</tbody>
-						</table>
+								</thead>
+								<tbody>
+									{% for goal in challenge.goals %}
+										<tr>
+											<td>{{ goal.name }}</td>
+											<td>{{ goal.elev }}'</td>
+											<td>
+												{% if goal.completed %}
+													{{ goal.completed | date_to_long_string }}
+												{% else if goal.completed_winter %}
+													{{ goal.completed_winter | date_to_long_string }}
+												{% endif %}
+											</td>
+											<td>
+												{% if goal.completed_winter and goal.completed_winter != false %}
+													{{ goal.completed_winter | date_to_long_string }}
+												{% endif %}
+											</td>
+										</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</article>
 			</div>

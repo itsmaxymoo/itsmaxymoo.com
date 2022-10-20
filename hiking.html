@@ -21,7 +21,8 @@ permalink: /hiking/
 			to discover new hikes. It's also a great excuse to go travel!
 		</p>
 
-		{% for challenge in site.data.peaks %}
+		{% assign peak_challenges = site.data.peaks | sort: "name" %}
+		{% for challenge in peak_challenges %}
 
 			<div class="box">
 

@@ -83,3 +83,106 @@
     elev: 3509
   - name: Rocky
     elev: 3487
+
+- name: Adirondack 46ers
+  description: Nestled in upstate New York, the Adirondacks are home to the state's largest peaks!
+    The Adirondacks are some of the most remote wilds you can get in the northeast. Compared to
+    the Whites, Adirondack hikes are significantly longer and more rugged!
+  goals:
+  - name: Marcy
+    elev: 5344
+    completed: 2022-07-23
+  - name: Algonquin
+    elev: 5114
+  - name: Haystack
+    elev: 4960
+  - name: Skylight
+    elev: 4926
+    completed: 2022-07-23
+  - name: Whiteface
+    elev: 4867
+    completed: 2020-07-06
+  - name: Dix
+    elev: 4857
+  - name: Gray
+    elev: 4840
+    completed: 2022-07-23
+  - name: Iroquois Peak
+    elev: 4840
+  - name: Basin
+    elev: 4827
+  - name: Gothics
+    elev: 4736
+  - name: Colden
+    elev: 4714
+    completed: 2022-07-23
+  - name: Giant
+    elev: 4627
+  - name: Nippletop
+    elev: 4620
+  - name: Santanoni
+    elev: 4607
+  - name: Redfield
+    elev: 4606
+  - name: Wright Peak
+    elev: 4580
+  - name: Saddleback
+    elev: 4515
+  - name: Panther
+    elev: 4442
+  - name: TableTop
+    elev: 4427
+  - name: Rocky Peak
+    elev: 4420
+  - name: Macomb
+    elev: 4405
+  - name: Armstrong
+    elev: 4400
+  - name: Hough
+    elev: 4400
+  - name: Seward
+    elev: 4361
+  - name: Marshall
+    elev: 4360
+  - name: Allen
+    elev: 4340
+  - name: Big Slide
+    elev: 4240
+  - name: Esther
+    elev: 4240
+  - name: Upper Wolf Jaw
+    elev: 4185
+  - name: Lower Wolf Jaw
+    elev: 4175
+  - name: Street
+    elev: 4166
+  - name: Phelps
+    elev: 4161
+  - name: Donaldson
+    elev: 4140
+  - name: Seymour
+    elev: 4120
+  - name: Sawteeth
+    elev: 4100
+  - name: Cascade
+    elev: 4098
+  - name: South Dix
+    elev: 4060
+  - name: Porter
+    elev: 4059
+  - name: Colvin
+    elev: 4057
+  - name: Emmons
+    elev: 4040
+  - name: Dial
+    elev: 4020
+  - name: Grace Peak
+    elev: 4012
+  - name: Blake Peak
+    elev: 3960
+  - name: Cliff
+    elev: 3960
+  - name: Nye
+    elev: 3895
+  - name: Couchsachraga
+    elev: 3820

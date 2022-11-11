@@ -1,0 +1,15 @@
+{% assign found_post = false %}
+{% for h in site.hikes %}
+	{% assign h_date = h.date | date_to_xmlschema %}
+	{% assign target_date = include.date | date_to_xmlschema %}
+
+	{% if h_date == target_date %}
+		{% assign found_post = h.url %}
+	{% endif %}
+{% endfor %}
+
+{% if found_post %}
+	<a href="{{ found_post }}">{{ include.date | date_to_long_string }}</a>
+{% else %}
+	{{ include.date | date_to_long_string }}
+{% endif %}

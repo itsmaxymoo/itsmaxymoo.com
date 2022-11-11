@@ -23,6 +23,12 @@ defaults:
       type: "pages"
     values:
       layout: "base"
+  -
+    scope:
+      path: ""
+      type: "hikes"
+    values:
+      layout: "hike"
 
 # Build settings
 timezone: America/New_York

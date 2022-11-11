@@ -1,0 +1,24 @@
+<section class="hero is-medium{% if include.image %} hero-image-{{ include.image }}{% endif %}">
+
+	<div class="hero-body">
+		<h1 class="title{% if include.title_color %} has-text-{{ include.title_color }}{% endif %}">
+			{% if include.title %}
+				{{ include.title }}
+			{% elsif page.title %}
+				{{ page.title }}
+			{% else %}
+				{{ site.title }}
+			{% endif %}
+		</h1>
+		<p class="subtitle{% if include.subtitle_color %} has-text-{{ include.subtitle_color }}{% endif %}">
+			{% if include.subtitle %}
+				{{ include.subtitle }}
+			{% elsif page.description %}
+				{{ page.description }}
+			{% else if not page.title %}
+				{{ site.description }}
+			{% endif %}
+		</p>
+	</div>
+
+</section>

@@ -1,10 +1,8 @@
 ---
-layout: hero
-title_hero_image: flower
-title_hero_title_color: white
-title_hero_subtitle_color: grey-light
 include_dev_icons: true
 ---
+
+{% include hero-header.html image="flower" title_color="white" subtitle_color="grey-lighter" %}
 
 {% assign dev_projects = site.dev_projects | sort: "order" %}
 

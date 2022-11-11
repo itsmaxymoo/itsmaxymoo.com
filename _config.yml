@@ -8,7 +8,21 @@ repo_url: "https://github.com/itsmaxymoo/itsmaxymoo.com"
 main_image: "assets/background/flower.jpg"
 
 collections:
-  - dev_projects
+
+  dev_projects:
+    output: false
+
+  hikes:
+    output: true
+    permalink: /hiking/:year-:month-:day-:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "base"
 
 # Build settings
 timezone: America/New_York

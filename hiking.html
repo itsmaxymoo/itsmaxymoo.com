@@ -5,7 +5,7 @@ description: journal — under construction!
 permalink: /hiking/
 ---
 
-{% include hero-header.html image="hike" title_color="white" subtitle_color="grey-lighter" %}
+{% include hero_header.html image="hike" title_color="white" subtitle_color="grey-lighter" %}
 
 <section class="section">
 	<div class="container">
@@ -65,14 +65,14 @@ permalink: /hiking/
 											<td>{{ goal.elev }}'</td>
 											<td>
 												{% if goal.completed %}
-													{% include link-hike.html date=goal.completed %}
+													{% include link_hike.html date=goal.completed %}
 												{% else if goal.completed_winter %}
-													{% include link-hike.html date=goal.completed_winter %}
+													{% include link_hike.html date=goal.completed_winter %}
 												{% endif %}
 											</td>
 											<td>
 												{% if goal.completed_winter and goal.completed_winter != false %}
-													{% include link-hike.html date=goal.completed_winter %}
+													{% include link_hike.html date=goal.completed_winter %}
 												{% endif %}
 											</td>
 										</tr>

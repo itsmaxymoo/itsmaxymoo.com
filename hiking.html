@@ -86,5 +86,23 @@ permalink: /hiking/
 
 		{% endfor %}
 
+		<h2 class="is-size-2 has-text-centered">Hiking Logs</h2>
+
+		<!-- <p class="is-size-5 has-text-justified pt-3 pb-4">
+			
+		</p> -->
+
+		<div class="content">
+
+			<ul>
+				{% for h in site.hikes %}
+					<li>
+						<a href="{{ h.url }}">{{ h.date | date_to_long_string }} - {{ h.title }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+
+		</div>
+
 	</div>
 </section>

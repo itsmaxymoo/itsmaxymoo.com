@@ -1,3 +1,32 @@
 ---
 layout: base
+hiking_stat_class: tag is-rounded is-medium
 ---
+
+<section class="section">
+	<div class="container">
+		
+		<header class="mb-4">
+
+			<h2 class="title is-size-2">
+				<span>{{ page.title }}</span>
+			</h2>
+	
+			<h3 class="subtitle">{{ page.date | date_to_long_string }}</h3>
+
+
+			<div class="tags">
+				<span class="{{ layout.hiking_stat_class }}">&#127758; {{ page.location }}</span>
+				<span class="{{ layout.hiking_stat_class }}">&#129406; {{ page.distance }} miles</span>
+				<span class="{{ layout.hiking_stat_class }}">&#9650; {{ page.elev_gain  }} feet</span>
+				<span class="{{ layout.hiking_stat_class }}">&#9201; {{ page.duration }} hours</span>
+			</div>
+
+		</header>
+
+		<main>
+			{{ content }}
+		</main>
+
+	</div>
+</section>

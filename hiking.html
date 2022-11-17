@@ -86,23 +86,15 @@ permalink: /hiking/
 
 		{% endfor %}
 
-		<h2 class="is-size-2 has-text-centered">Hiking Logs</h2>
+		<nav class="panel">
+			<p class="panel-heading">
+				Hike Logs
+			</p>
 
-		<!-- <p class="is-size-5 has-text-justified pt-3 pb-4">
-			
-		</p> -->
-
-		<div class="content">
-
-			<ul>
-				{% for h in site.hikes %}
-					<li>
-						<a href="{{ h.url }}">{{ h.date | date_to_long_string }} - {{ h.title }}</a>
-					</li>
-				{% endfor %}
-			</ul>
-
-		</div>
+			{% for h in site.hikes %}
+				<a class="panel-block" href="{{ h.url }}">{{ h.date | date_to_long_string }} - {{ h.title }}</a>
+			{% endfor %}
+		</nav>
 
 	</div>
 </section>

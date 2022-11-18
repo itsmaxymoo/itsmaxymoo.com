@@ -1,0 +1,34 @@
+---
+layout: base
+tag_class: tag is-rounded is-medium
+---
+
+<section class="section">
+	<div class="container">
+		
+		<header class="mb-4">
+
+			<h2 class="title is-size-2">
+				<span>{{ page.title }}</span>
+			</h2>
+	
+			<h3 class="subtitle">{{ page.date | date_to_long_string }}</h3>
+
+
+			<div class="tags">
+				{% if page.location %}<span class="{{ layout.tag_class }}">&#127758; {{ page.location }}</span>{% endif %}
+				{% if page.distance %}<span class="{{ layout.tag_class }}">&#129406; {{ page.distance }} miles</span>{% endif %}
+				{% if page.elev_gain %}<span class="{{ layout.tag_class }}">&#9650; {{ page.elev_gain }} feet</span>{% endif %}
+				{% if page.duration %}<span class="{{ layout.tag_class }}">&#9201; {{ page.duration }} hours</span>{% endif %}
+			</div>
+
+		</header>
+
+		<main>
+			<div class="content">
+				{{ content }}
+			</div>
+		</main>
+
+	</div>
+</section>

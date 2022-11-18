@@ -12,10 +12,6 @@ collections:
   dev_projects:
     output: false
 
-  hikes:
-    output: true
-    permalink: /hiking/:year-:month-:day-:title/
-
 defaults:
   -
     scope:
@@ -26,9 +22,10 @@ defaults:
   -
     scope:
       path: ""
-      type: "hikes"
+      type: "posts"
     values:
-      layout: "hike"
+      layout: "post"
+      permalink: /blog/:year-:month-:day-:title/
 
 # Build settings
 timezone: America/New_York

@@ -91,7 +91,8 @@ permalink: /hiking/
 				Hike Logs
 			</p>
 
-			{% for h in site.hikes %}
+			{% assign hikes = site.posts | where: "category", "hike" %}
+			{% for h in hikes %}
 				<a class="panel-block" href="{{ h.url }}">{{ h.date | date_to_long_string }} - {{ h.title }}</a>
 			{% endfor %}
 		</nav>

@@ -1,5 +1,7 @@
 ---
 title: Whiteface Mountain, From the Southern Trail
+category: hike
+
 location: Adirondacks
 distance: 14
 elev_gain: 3526

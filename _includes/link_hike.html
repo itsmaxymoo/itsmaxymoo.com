@@ -1,5 +1,6 @@
 {% assign found_post = false %}
-{% for h in site.hikes %}
+{% assign hikes = site.posts | where: "category", "hike" %}
+{% for h in hikes %}
 	{% assign h_date = h.date | date_to_xmlschema %}
 	{% assign target_date = include.date | date_to_xmlschema %}
 

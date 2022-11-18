@@ -1,0 +1,17 @@
+---
+title: Blog
+description: ""
+permalink: /blog/
+---
+
+{% include hero_header.html hero_class="is-info" %}
+
+<section class="section">
+	<div class="container">
+		{% for p in site.posts %}
+			<div class="box">
+				{% include post.html post=p %}
+			</div>
+		{% endfor %}
+	</div>
+</section>

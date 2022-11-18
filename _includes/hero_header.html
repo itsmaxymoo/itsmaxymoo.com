@@ -1,4 +1,4 @@
-<section class="hero is-medium{% if include.image %} hero-image-{{ include.image }}{% endif %}">
+<section class="hero is-medium{% if include.image %} hero-image-{{ include.image }}{% elsif include.hero_class %} {{ include.hero_class }}{% endif %}">
 
 	<div class="hero-body">
 		<h1 class="title{% if include.title_color %} has-text-{{ include.title_color }}{% endif %}">

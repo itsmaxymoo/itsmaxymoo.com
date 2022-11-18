@@ -1,0 +1,26 @@
+{% assign tag_class = "tag is-rounded is-medium" %}
+
+<header class="mb-4">
+
+	<h2 class="title is-size-2">
+		<span>{{ include.post.title }}</span>
+	</h2>
+
+	<h3 class="subtitle">{{ include.post.date | date_to_long_string }}</h3>
+
+
+	<div class="tags">
+		<span class="{{ tag_class }}">{% if include.post.category %}{{ include.post.category }}{% else %}no category{% endif %}</span>
+		{% if include.post.location %}<span class="{{ tag_class }}">&#127758; {{ include.post.location }}</span>{% endif %}
+		{% if include.post.distance %}<span class="{{ tag_class }}">&#129406; {{ include.post.distance }} miles</span>{% endif %}
+		{% if include.post.elev_gain %}<span class="{{ tag_class }}">&#9650; {{ include.post.elev_gain }} feet</span>{% endif %}
+		{% if include.post.duration %}<span class="{{ tag_class }}">&#9201; {{ include.post.duration }} hours</span>{% endif %}
+	</div>
+
+</header>
+
+<main>
+	<div class="content">
+		{{ include.post.content }}
+	</div>
+</main>

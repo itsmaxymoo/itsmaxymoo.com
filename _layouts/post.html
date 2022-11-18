@@ -16,6 +16,7 @@ tag_class: tag is-rounded is-medium
 
 
 			<div class="tags">
+				<span class="{{ layout.tag_class }}">{% if page.category %}{{ page.category }}{% else %}no category{% endif %}</span>
 				{% if page.location %}<span class="{{ layout.tag_class }}">&#127758; {{ page.location }}</span>{% endif %}
 				{% if page.distance %}<span class="{{ layout.tag_class }}">&#129406; {{ page.distance }} miles</span>{% endif %}
 				{% if page.elev_gain %}<span class="{{ layout.tag_class }}">&#9650; {{ page.elev_gain }} feet</span>{% endif %}

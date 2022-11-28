@@ -1,2 +1,2 @@
 #!/bin/bash
-jekyll serve --port 8008 --livereload
+jekyll serve --port 8008 --livereload --drafts

@@ -45,6 +45,8 @@
       icon_class: las la-code
     - name: Open Source Licenses
       icon_class: las la-gavel
+    - name: Svelte
+      icon_class: devicon-svelte-plain
 
 - name: Certifications
   items:

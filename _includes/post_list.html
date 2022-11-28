@@ -1,9 +1,13 @@
-<ul>
+<nav class="panel">
+	<p class="panel-heading">
+		Posts
+	</p>
+
 	{% for p in include.posts %}
-		<li>
-			<a href="{{ p.url }}">
-				{{ p.title }}
-			</a>
-		</li>
+
+		<a class="panel-block" href="{{ p.url }}">
+			{{ p.date | date: site.date_ymd }} &ndash; {{ p.title | truncate: 40 }}
+		</a>
+
 	{% endfor %}
-</ul>
+</nav>

@@ -1,4 +1,4 @@
-<header>
+<header class="mb-4">
 
 	<h2 class="title is-size-2">
 		<span class="has-text-weight-light">{{ include.prepend_title }}</span>
@@ -9,7 +9,7 @@
 
 	{% assign tag_class = "tag is-rounded is-medium" %}
 
-	<div class="tags mb-4">
+	<div class="tags">
 		<span class="{{ tag_class }}">{% if include.post.category %}{{ include.post.category }}{% else %}no category{% endif %}</span>
 		{% if include.post.location %}<span class="{{ tag_class }}">&#127758; {{ include.post.location }}</span>{% endif %}
 		{% if include.post.distance %}<span class="{{ tag_class }}">&#129406; {{ include.post.distance }} miles</span>{% endif %}
@@ -26,3 +26,19 @@
 	</div>
 
 </main>
+
+<nav class="has-text-centered mt-5">
+
+	<a href="{{ include.post.previous }}">
+		<button class="button is-outlined is-link" {% unless include.post.previous %}disabled{% endunless %}>
+			Previous
+		</button>
+	</a>
+
+	<a href="{{ include.post.next }}">
+		<button class="button is-outlined is-link" {% unless include.post.next %}disabled{% endunless %}>
+			Next
+		</button>
+	</a>
+
+</nav>

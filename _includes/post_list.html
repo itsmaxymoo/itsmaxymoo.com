@@ -6,7 +6,11 @@
 	{% for p in include.posts %}
 
 		<a class="panel-block" href="{{ p.url }}">
-			{{ p.date | date: site.date_ymd }} &ndash; {{ p.title | truncate: 40 }}
+			<span class="{% if p == page %}is-underlined{% endif %}">
+				{{ p.date | date: site.date_ymd }}
+				&ndash;
+				{{ p.title | truncate: 40 }}
+			</span>
 		</a>
 
 	{% endfor %}

@@ -29,13 +29,13 @@
 
 <nav class="has-text-centered mt-5">
 
-	<a href="{{ include.post.previous }}">
+	<a href="{{ include.post.previous.url }}">
 		<button class="button is-outlined is-link" {% unless include.post.previous %}disabled{% endunless %}>
 			Prev
 		</button>
 	</a>
 
-	<a href="{{ include.post.next }}">
+	<a href="{{ include.post.next.url }}">
 		<button class="button is-outlined is-link" {% unless include.post.next %}disabled{% endunless %}>
 			Next
 		</button>

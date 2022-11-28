@@ -1,6 +1,6 @@
 {% assign tag_class = "tag is-rounded is-medium" %}
 
-<div class="tags">
+<div class="tags mb-4">
 	<span class="{{ tag_class }}">{% if include.post.category %}{{ include.post.category }}{% else %}no category{% endif %}</span>
 	{% if include.post.location %}<span class="{{ tag_class }}">&#127758; {{ include.post.location }}</span>{% endif %}
 	{% if include.post.distance %}<span class="{{ tag_class }}">&#129406; {{ include.post.distance }} miles</span>{% endif %}

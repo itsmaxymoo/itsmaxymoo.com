@@ -1,0 +1,9 @@
+<ul>
+	{% for p in include.posts %}
+		<li>
+			<a href="{{ p.url }}">
+				{{ p.title }}
+			</a>
+		</li>
+	{% endfor %}
+</ul>

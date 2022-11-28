@@ -1,0 +1,9 @@
+{% assign tag_class = "tag is-rounded is-medium" %}
+
+<div class="tags">
+	<span class="{{ tag_class }}">{% if include.post.category %}{{ include.post.category }}{% else %}no category{% endif %}</span>
+	{% if include.post.location %}<span class="{{ tag_class }}">&#127758; {{ include.post.location }}</span>{% endif %}
+	{% if include.post.distance %}<span class="{{ tag_class }}">&#129406; {{ include.post.distance }} miles</span>{% endif %}
+	{% if include.post.elev_gain %}<span class="{{ tag_class }}">&#9650; {{ include.post.elev_gain }} feet</span>{% endif %}
+	{% if include.post.duration %}<span class="{{ tag_class }}">&#9201; {{ include.post.duration }} hours</span>{% endif %}
+</div>

@@ -7,23 +7,4 @@ layout: blog
 
 {% assign latest_post = site.posts.last %}
 
-<header>
-
-	<h2 class="title is-size-2">
-		<span class="has-text-weight-light">Latest post: </span>
-		<span>{{ latest_post.title }}</span>
-	</h2>
-
-	<h3 class="subtitle">{{ latest_post.date | date_to_long_string }}</h3>
-
-	{% include post_tags.html post=latest_post %}
-
-</header>
-
-<main>
-
-	<div class="content">
-		{{ latest_post.content }}
-	</div>
-
-</main>
+{% include post.html post=latest_post prepend_title="Latest post: " %}

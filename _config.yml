@@ -28,6 +28,12 @@ defaults:
     values:
       layout: "post"
       permalink: /blog/:year-:month-:day-:title/
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      draft: true
 
 # Build settings
 timezone: America/New_York

@@ -3,6 +3,9 @@
 	<h2 class="title is-size-2">
 		<span class="has-text-weight-light">{{ include.prepend_title }}</span>
 		<span>{{ include.post.title }}</span>
+		{% if include.post.draft %}
+			<span class="tag is-medium is-warning">DRAFT</span>
+		{% endif %}
 	</h2>
 
 	<h3 class="subtitle">{{ include.post.date | date_to_long_string }}</h3>

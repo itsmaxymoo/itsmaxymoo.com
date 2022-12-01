@@ -40,6 +40,13 @@ timezone: America/New_York
 markdown: kramdown
 sass:
   style: compressed
+plugins:
+  - jekyll-feed
+
+# Atom feed settings
+feed:
+  categories:
+    - hike
 
 exclude:
   - LICENSE.md

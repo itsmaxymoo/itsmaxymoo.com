@@ -12,7 +12,7 @@ image: null
 This year's family vacation is to the beach. Great fun, but
 not much in the way of hard hiking. I don't want to take more
 time off of work, so what's the logical solution? Why not leave
-two days early and do a near-marathon Adirondack hike the day before?
+two days early and do a near-marathon Adirondack hike the day before!
 
 This Adirondack hike had me sleeping in my car the night before -- pretty
 standard actually. My meal the night before was cold prepackaged meatloaf

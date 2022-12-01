@@ -1,6 +1,12 @@
 <nav class="panel">
 	<p class="panel-heading">
 		Posts
+
+		<a href="{{ site.url }}{{ site.baseurl }}/feed.xml">
+			<span class="icon">
+				<i class="las la-rss"></i>
+			</span>
+		</a>
 	</p>
 
 	{% for p in include.posts %}

@@ -1,0 +1,42 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>{{ site.title | xml_escape }}</title>
+	<subtitle>{{ site.description | xml_escape }}</subtitle>
+	<link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" />
+	<link href="{{ site.url }}{{ site.baseurl }}/" />
+	<id>{{ site.url }}{{ site.baseurl }}/</id>
+	<updated>{{ site.time | date_to_rfc822 }}</updated>
+	<author>
+		<name>{{ site.author }}</name>
+		<email>{{ "contact@itsmaxymoo.com" | xml_escape }}</email>
+	</author>
+	<icon>{{ site.url }}{{ site.baseurl }}/assets/branding/favicon-32x32.png</icon>
+	
+	
+	{% for p in site.posts %}
+
+		<entry>
+			<title>{{ p.title | xml_escape }}</title>
+			<link href="{{ p.url }}" />
+			<link rel="alternate" type="text/html" href="{{ p.url }}"/>
+			<id>{{ p.url }}</id>
+			<published>{{ p.date | date_to_rfc822 }}</published>
+			<updated>{{ p.date | date_to_rfc822 }}</updated>
+			<summary>{{ p.excerpt | markdownify | xml_escape }}</summary>
+			<category>{{ p.category }}</category>
+			<content type="xhtml">
+				<div xmlns="http://www.w3.org/1999/xhtml">
+					{{ p.content | markdownify | xml_escape }}
+				</div>
+			</content>
+		</entry>
+
+	{% endfor %}
+
+</feed>

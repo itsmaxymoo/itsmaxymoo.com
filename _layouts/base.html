@@ -11,6 +11,7 @@
 	<meta name="description"
 		content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+	<link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="Site blog feed" />
 
 	<!-- OG Meta -->
 	<meta property="og:title"

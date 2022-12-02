@@ -48,4 +48,9 @@ a.disabled
 
 	&:hover
 		color: $disabled-color
-	
+
+// Class to swap columns on mobile
+@media(max-width: 767px)
+	.reverse-columns-mobile
+		flex-direction: column-reverse
+		display: flex

@@ -47,6 +47,8 @@
       icon_class: las la-gavel
     - name: Svelte
       icon_class: devicon-svelte-plain
+    - name: Bulma (css)
+      icon_class: devicon-bulma-plain
 
 - name: Certifications
   items:

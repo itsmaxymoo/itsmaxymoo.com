@@ -43,6 +43,8 @@ sass:
 
 exclude:
   - LICENSE.md
+  - LICENSE
+  - .git*
   - README.md
   - TODO.md
   - "*.sh"

@@ -49,6 +49,8 @@
       icon_class: devicon-svelte-plain
     - name: Bulma (css)
       icon_class: devicon-bulma-plain
+    - name: SCPI
+      icon_class: las la-code
 
 - name: Certifications
   items:

@@ -30,8 +30,10 @@
     completed: 2022-06-04
   - name: Table
     elev: 3825
+    completed_winter: 2023-01-04
   - name: Peekamoose
     elev: 3819
+    completed_winter: 2023-01-04
   - name: Sugarloaf
     elev: 3783
     completed: 2021-07-06

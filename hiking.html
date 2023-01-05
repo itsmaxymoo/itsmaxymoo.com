@@ -59,7 +59,8 @@ permalink: /hiking/
 									</tr>
 								</thead>
 								<tbody>
-									{% for goal in challenge.goals %}
+									{% assign sorted_goals = challenge.goals | sort: "elev" | reverse %}
+									{% for goal in sorted_goals %}
 										<tr>
 											<td>{{ goal.name }}</td>
 											<td>{{ goal.elev }}'</td>

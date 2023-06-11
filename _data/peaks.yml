@@ -14,6 +14,7 @@
     completed_winter: false
   - name: Hunter
     elev: 4030
+    completed: 2023-06-10
   - name: Black Dome
     elev: 3994
   - name: Thomas Cole
@@ -42,6 +43,7 @@
     completed: 2022-06-26
   - name: Southwest Hunter
     elev: 3753
+    completed: 2023-06-10
   - name: Balsam Lake
     elev: 3729
   - name: Panther

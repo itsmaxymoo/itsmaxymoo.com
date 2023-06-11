@@ -31,7 +31,7 @@
       icon_class: devicon-git-plain
     - name: Jetbrains IDEs
       icon_class: devicon-jetbrains-plain
-    - name: Linux
+    - name: Linux (8 years)
       icon_class: devicon-linux-plain
     - name: Linux (Debian)
       icon_class: devicon-debian-plain
@@ -51,6 +51,10 @@
       icon_class: devicon-bulma-plain
     - name: SCPI
       icon_class: las la-code
+    - name: JavaFX
+      icon_class: devicon-java-plain
+    - name: Snipe-IT
+      icon_class: las la-box
 
 - name: Certifications
   items:

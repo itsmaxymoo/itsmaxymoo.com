@@ -41,6 +41,7 @@ defaults:
       draft: true
 
 # Build settings
+source: src
 timezone: America/New_York
 markdown: kramdown
 sass:

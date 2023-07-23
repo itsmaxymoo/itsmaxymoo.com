@@ -16,7 +16,7 @@ collections:
   
   worlds:
     output: true
-    layout: worlds
+    layout: world
     permalink: /worlds/:title
 
 defaults:

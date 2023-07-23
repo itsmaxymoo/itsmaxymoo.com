@@ -13,6 +13,10 @@ collections:
 
   dev_projects:
     output: false
+  
+  worlds:
+    output: true
+    permalink: /world/:title
 
 defaults:
   -

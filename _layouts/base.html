@@ -45,70 +45,74 @@
 
 </head>
 
-<body>
-	<nav class="navbar" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-			<a class="navbar-item" href="{{ site.url }}/{{ site.baseurl }}">
-				{{ site.title }}
-			</a>
-
-			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-				data-target="navbar">
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-			</a>
-		</div>
-
-		<div id="navbar" class="navbar-menu">
-			<div class="navbar-end">
-				<div class="navbar-start">
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link">
-							Projects
-						</a>
+<body class="website content">
+	<main class="website-content">
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="{{ site.url }}/{{ site.baseurl }}">
+					{{ site.title }}
+				</a>
 	
-						<div class="navbar-dropdown">
-							{% assign dev_projects = site.dev_projects | sort: "order" %}
-							{% for p in dev_projects %}
-							<a class="navbar-item" href="{{ p.homepage }}">
-								{{ p.title }}
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+					data-target="navbar">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+	
+			<div id="navbar" class="navbar-menu">
+				<div class="navbar-end">
+					<div class="navbar-start">
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link">
+								Projects
 							</a>
-							{% endfor %}
-							<hr class="navbar-divider">
-							<a class="navbar-item" href="{{ site.repo_url }}">
-								Edit this Site
-							</a>
+		
+							<div class="navbar-dropdown">
+								{% assign dev_projects = site.dev_projects | sort: "order" %}
+								{% for p in dev_projects %}
+								<a class="navbar-item" href="{{ p.homepage }}">
+									{{ p.title }}
+								</a>
+								{% endfor %}
+								<hr class="navbar-divider">
+								<a class="navbar-item" href="{{ site.repo_url }}">
+									Edit this Site
+								</a>
+							</div>
 						</div>
-					</div>
-
-					<a class="navbar-item" href="{{ site.baseurl }}/hiking">
-						Hiking
-					</a>
-
-					<a class="navbar-item" href="{{ site.baseurl }}/blog">
-						Blog
-					</a>
-
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link">
-							Social
+	
+						<a class="navbar-item" href="{{ site.baseurl }}/worlds">
+							Worlds
 						</a>
 	
-						<div class="navbar-dropdown">
-							{% for s in site.data.socials %}
-							<a class="navbar-item" href="{{ s.url }}">
-								{{ s.name }}
+						<a class="navbar-item" href="{{ site.baseurl }}/hiking">
+							Hiking
+						</a>
+	
+						<a class="navbar-item" href="{{ site.baseurl }}/blog">
+							Blog
+						</a>
+	
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link">
+								Social
 							</a>
-							{% endfor %}
+		
+							<div class="navbar-dropdown">
+								{% for s in site.data.socials %}
+								<a class="navbar-item" href="{{ s.url }}">
+									{{ s.name }}
+								</a>
+								{% endfor %}
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 
-	<main>
 		{{ content }}
 	</main>
 

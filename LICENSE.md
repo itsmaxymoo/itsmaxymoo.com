@@ -3,7 +3,7 @@
 Copyright (c) 2020-2022 Max Loiacono.
 
 All files under the following directories are **All Rights Reserved**:
-`_drafts/`, `_posts/`, `_worlds/`, `content/`, unless otherwise noted.
+`src/_drafts/`, `src/_posts/`, `src/_worlds/`, `src/content/`, `src/assets/branding` unless otherwise noted.
 Images on this site are all rights reserved, unless otherwise noted.
 
 All other source code files are under a Mozilla Public License

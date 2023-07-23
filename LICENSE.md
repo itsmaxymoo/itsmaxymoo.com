@@ -3,7 +3,8 @@
 Copyright (c) 2020-2022 Max Loiacono.
 
 All files under the following directories are **All Rights Reserved**:
-`_drafts/`, `_posts/`
+`_drafts/`, `_posts/`, `_worlds/`, `content/`, unless otherwise noted.
+Images on this site are all rights reserved, unless otherwise noted.
 
 All other source code files are under a Mozilla Public License
 Version 2.0. **Summed up**, this site is open source **EXCEPT** any blog
@@ -13,6 +14,7 @@ post!
 not use anything on itsmaxymoo.com or in this repository to
 impersonate me!
 
+```
 Mozilla Public License Version 2.0
 ==================================
 
@@ -386,3 +388,4 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
+```

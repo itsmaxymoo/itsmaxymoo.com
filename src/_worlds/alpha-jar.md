@@ -1,8 +1,9 @@
 ---
 title: Alpha Jar
 started: 2023-07-22
-type: sealed_terrestrial
-status: alive # alive, deceased
+world_type: ecosphere
+environment_type: sealed_terrestrial
+status: alive # alive, dead
 species: ""
 ---
 

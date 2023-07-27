@@ -2,4 +2,29 @@
 layout: worlds
 ---
 
+<h1>{{ page.title }}</h1>
+
+<div class="box">
+	Type:
+	{% case page.environment_type %}
+	{% when "open_terrestrial" %}Terrestrial
+	{% when "sealed_terrestrial" %}Sealed Terrestrial
+	{% when "sealed_aquatic" %}Sealed Aquatic
+	{% endcase %}<br />
+	Created: {{ page.started | date: site.date_natural }}<br />
+	Status:
+	{% case page.status %}
+	{% when "alive" %}Alive
+	{% when "dead" %}Deceased
+	{% endcase %}<br />
+	{% if page.species and page.species != "" %}
+	Notable Species: {{ page.species }}<br />
+	{% endif %}
+	<p>
+		{% if page.image %}
+		{% include image.html tag="the-alpha-colonys-first-outer-world-setup" basic=true %}
+		{% endif %}
+	</p>
+</div>
+
 {{ content }}

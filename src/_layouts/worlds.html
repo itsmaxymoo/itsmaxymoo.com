@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div class="container is-max-desktop">
+<div class="container is-max-desktop mb-6">
 	<div class="columns">
 		<div class="column is-3">
 			<nav class="panel">
@@ -14,7 +14,7 @@ layout: base
 			
 					<a class="panel-block" href="{{ w.url }}">
 						<span>
-							{{ w.title }}
+							{{ w.title }} {% include world_emoji.html world=w %}
 						</span>
 					</a>
 			

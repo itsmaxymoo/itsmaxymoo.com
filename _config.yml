@@ -6,6 +6,7 @@ url: "https://itsmaxymoo.com" # the base hostname & protocol for your site, e.g.
 repo_url: "https://github.com/itsmaxymoo/itsmaxymoo.com"
 
 date_ymd: "%Y-%m-%d"
+date_natural: "%-d %B %Y"
 
 main_image: "assets/background/flower.jpg"
 

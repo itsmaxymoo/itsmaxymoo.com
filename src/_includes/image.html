@@ -1,0 +1,43 @@
+<div markdown="0">
+	{% assign site_content = site.content | where_exp:"c", "c.ctags contains include.tag" %}
+	{% assign endofline=true %}
+	{% for c in site_content %}
+	{% if include.basic != true %}<div class="box">
+		<h4>{{ c.title }}</h4>{% endif %}
+		{% if c.license != 1 and c.license != 2 %}
+		{% assign protect = true %}
+		{% else %}
+		{% assign protect = false %}
+		{% endif %}
+
+		{% if endofline != true or protect == true %}
+		<a style="cursor: default;">
+		{% else %}
+			<a href="{{ site.baseurl }}/content/{{ c.filename }}">
+				{% endif %}
+
+				<div class="imgprotect-container">
+					<img class="imgprotect-content" src="{{ site.baseurl }}/content/{{ c.filename }}" alt="{{ c.title }}"
+						loading="lazy" title="{{ c.title }}" style="display: block; margin: auto;" width="{{ c.width }}"
+						height="{{ c.height }}" {% if protect==true %}draggable="false" oncontextmenu="return false;"
+						onmousedown="return false;" {% endif %} />
+					{% if protect == true %}
+					<img class="imgprotect-protect" src="{{ site.assets }}/transparent.png" title="{{ c.title }}"
+						style="display: block; margin: auto;" width="{{ c.width }}" height="{{ c.height }}"
+						draggable="false" oncontextmenu="return false;" onmousedown="return false;" />
+					{% endif %}
+				</div>
+
+		</a>
+			{% if include.basic != true %}<p class="help has-text-centered">by {% if c.author and c.author != "Unknown"
+				and c.author != "unknown" %}{{ c.author }}{% else %}<i>unknown</i>{% endif %} - {% case c.license %}{%
+				when 0 %}All rights reserved{% when 1 %}<a
+					href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>{% when 2 %}Public
+				domain{% when 3 %}Fair use - All rights reserved by the author.{% else %}{{ c.license }}{% endcase %}
+			</p>
+			{{ c.content }}
+			<!-- <a href="{{ c.url | remove: '/index.html' }}" target="_blank">[more info]</a> -->
+	</div>
+	{% endif %}
+	{% endfor %}
+</div>

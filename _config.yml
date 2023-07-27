@@ -43,6 +43,12 @@ defaults:
       type: "drafts"
     values:
       draft: true
+  -
+    scope:
+      path: ""
+      type: "worlds"
+    values:
+      layout: world
 
 # Build settings
 source: src

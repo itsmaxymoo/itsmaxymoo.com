@@ -5,7 +5,21 @@ layout: base
 <div class="container is-max-desktop">
 	<div class="columns">
 		<div class="column is-3">
-			nav
+			<nav class="panel">
+				<p class="panel-heading mb-0">
+					Worlds
+				</p>
+			
+				{% for w in site.worlds %}
+			
+					<a class="panel-block" href="{{ w.url }}">
+						<span>
+							{{ w.title }}
+						</span>
+					</a>
+			
+				{% endfor %}
+			</nav>
 		</div>
 		<div class="column">
 			{{ content }}

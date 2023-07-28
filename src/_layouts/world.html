@@ -14,15 +14,16 @@ layout: worlds
 	Created: {{ page.started | date: site.date_natural }}<br />
 	Status:
 	{% case page.status %}
-	{% when "alive" %}Alive
-	{% when "dead" %}Deceased
+	{% when 0 %}Alive
+	{% when 1 %}Dormant
+	{% when 2 %}Deceased
 	{% endcase %}<br />
 	{% if page.species and page.species != "" %}
 	Notable Species: {{ page.species }}<br />
 	{% endif %}
 	<p>
 		{% if page.image %}
-		{% include image.html tag="the-alpha-colonys-first-outer-world-setup" basic=true %}
+		{% include image.html tag=page.image basic=true %}
 		{% endif %}
 	</p>
 </div>

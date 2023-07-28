@@ -1,0 +1,9 @@
+{% if include.world.world_type == "ants" %}
+	🐜
+{% else if include.world.world_type == "ecosphere" %}
+	{% if include.world.environment_type contains "terrestrial" %}
+		🌎
+	{% else if include.world.environment_type contains "aquatic" %}
+		🌊
+	{% endif %}
+{% endif %}

@@ -10,11 +10,12 @@ layout: base
 					Worlds
 				</p>
 			
-				{% for w in site.worlds %}
+				{% assign worlds = site.worlds | sort: "status" %}
+				{% for w in worlds %}
 			
 					<a class="panel-block" href="{{ w.url }}">
 						<span>
-							{{ w.title }} {% include world_emoji.html world=w %}
+							{{ w.title }} {% include world/emoji.html world=w %}
 						</span>
 					</a>
 			

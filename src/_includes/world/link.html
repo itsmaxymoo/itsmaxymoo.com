@@ -1,0 +1,1 @@
+{% assign wa = site.worlds | where_exp: "w","w.slug == include.world" %}{% assign w = wa | first %}<a href="{{ w.url }}">{{ w.title }}</a>

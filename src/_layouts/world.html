@@ -29,3 +29,35 @@ layout: worlds
 </div>
 
 {{ content }}
+
+<h2>Updates</h2>
+
+<table class="table is-striped is-hoverable is-fullwidth is-mobile">
+	<thead>
+		<tr>
+			<th>Day</th>
+			<th>Update</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% assign relevant_posts = site.categories.worlds | sort:"date" | reverse | where_exp: "item", "item.worlds
+		contains page.slug" %}
+		{% if relevant_posts.size > 0 %}
+		{% for post in relevant_posts %}
+		<tr class="is-clickable">
+			<td>{% include world/calc_days.html post=post world=page %}</td>
+			<td>
+				<a href="{{ post.url }}">
+					{{ post.title | truncate: 40 }}
+				</a>
+			</td>
+		</tr>
+		{% endfor %}
+		{% else %}
+		<tr>
+			<td>none yet...</td>
+			<td>check back later!</td>
+		</tr>
+		{% endif %}
+	</tbody>
+</table>

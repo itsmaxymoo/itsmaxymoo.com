@@ -1,0 +1,6 @@
+{% assign post_date = include.post.date | date: '%s' %}
+{% assign start = include.world.started | date: '%s' %}
+{% assign secondsSince = post_date | minus: start %}
+{% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60 %}
+{% assign daysSince = hoursSince | divided_by: 24 %}
+{{daysSince}}

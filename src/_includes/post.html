@@ -18,6 +18,15 @@
 		{% if include.post.distance %}<span class="{{ tag_class }}">&#129406; {{ include.post.distance }} miles</span>{% endif %}
 		{% if include.post.elev_gain %}<span class="{{ tag_class }}">&#9650; {{ include.post.elev_gain }} feet</span>{% endif %}
 		{% if include.post.duration %}<span class="{{ tag_class }}">&#9201; {{ include.post.duration }} hours</span>{% endif %}
+		{% if include.post.worlds %}
+			{% for worl in include.post.worlds %}
+			<span class="{{ tag_class }}">
+				{% include world/link.html world=worl %}
+				{% assign world_to_calc = site.worlds | where_exp: "item", "item.slug == worl" | first %}
+				, day {% include world/calc_days.html post=page world=world_to_calc %}
+			</span>
+			{% endfor %}
+		{% endif %}
 	</div>
 
 </header>

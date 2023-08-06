@@ -2,7 +2,7 @@
 	{% assign site_content = site.content | where_exp:"c", "c.ctags contains include.tag" %}
 	{% assign endofline=true %}
 	{% for c in site_content %}
-	{% if include.basic != true %}<div class="box">
+	{% if include.basic != true %}<div class="box mb-3">
 		<h4>{{ c.title }}</h4>{% endif %}
 		{% if c.license != 1 and c.license != 2 %}
 		{% assign protect = true %}

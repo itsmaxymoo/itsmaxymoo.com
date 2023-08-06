@@ -4,7 +4,8 @@ started: 2023-07-22
 world_type: ecosphere
 environment_type: sealed_terrestrial
 status: 0 # 0 = alive, 1 = dormant, 2 = deceased
-species: ""
+species: "Fern :)"
+image: alpha-jar-5-august-2023-update-020-grass-sprouts
 ---
 
 {{ page.title }} is my first attempt at an ecosphere!

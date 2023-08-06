@@ -10,7 +10,7 @@ from datetime import datetime
 
 JEKCMS_VERSION = "1.2"
 
-HTML_ROOT = "src"
+HTML_ROOT = "."
 
 JEKCMS_AUTHOR = "Max Loiacono"
 CURRENT_YEAR_STR = str(datetime.now().year)

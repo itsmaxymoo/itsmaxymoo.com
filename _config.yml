@@ -52,7 +52,7 @@ defaults:
       layout: world
 
 # Build settings
-source: src
+source: "."
 timezone: America/New_York
 markdown: kramdown
 sass:

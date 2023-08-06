@@ -5,6 +5,7 @@ world_type: ecosphere
 environment_type: sealed_aquatic
 status: 0 # 0 = alive, 1 = dormant, 2 = deceased
 species: ""
+image: beta-jar-5-august-2023
 ---
 
 {{ page.title }} is my first shot at an aquatic ecosphere.

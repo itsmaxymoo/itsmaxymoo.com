@@ -23,7 +23,7 @@
 			<span class="{{ tag_class }}">
 				{% include world/link.html world=worl %}
 				{% assign world_to_calc = site.worlds | where_exp: "item", "item.slug == worl" | first %}
-				, day {% include world/calc_days.html post=page world=world_to_calc %}
+				, day {% include world/calc_days.html post=include.post world=world_to_calc %}
 			</span>
 			{% endfor %}
 		{% endif %}

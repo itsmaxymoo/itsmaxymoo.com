@@ -65,6 +65,8 @@ exclude:
   - README.md
   - TODO.md
   - "*.sh"
+  - "*.py"
+  - "requirements.txt"
   - .vscode/
   - .sass-cache/
   - .jekyll-cache/

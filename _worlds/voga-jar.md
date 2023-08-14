@@ -4,7 +4,7 @@ started: 2023-07-28
 world_type: ecosphere
 environment_type: sealed_aquatic
 status: 0 # 0 = alive, 1 = dormant, 2 = deceased
-species: ""
+species: "Sewage Worms"
 image: voga-jar-july-2023
 ---
 

@@ -25,7 +25,7 @@ include_dev_icons: true
 		<nav class="breadcrumb is-centered is-large">
 			<ul>
 				{% for s in site.data.socials %}
-					<li>
+					<li class="mt-0">
 						<a href="{{ s.url }}">
 							<span class="icon is-small">
 								<i class="{{ s.icon_class }}" aria-hidden="true"></i>
@@ -104,7 +104,7 @@ include_dev_icons: true
 										<span>Homepage</span>
 									</a>
 								</li>
-								<li>
+								<li class="mt-0">
 									{% if p.source != "" %}
 										<a href="{{ p.source }}">
 											<span class="icon is-small">

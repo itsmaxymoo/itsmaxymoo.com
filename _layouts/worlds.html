@@ -17,6 +17,8 @@ layout: base
 						<span>
 							{{ w.title }} {% include world/emoji.html world=w %}
 						</span>
+
+						{% include world/tag.html world=w %}
 					</a>
 			
 				{% endfor %}

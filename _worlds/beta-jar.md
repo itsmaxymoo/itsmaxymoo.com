@@ -3,7 +3,7 @@ title: Beta Jar
 started: 2023-07-23
 world_type: ecosphere
 environment_type: sealed_aquatic
-status: 0 # 0 = alive, 1 = dormant, 2 = deceased
+status: 1 # 0 = alive, 1 = dormant, 2 = deceased
 species: ""
 image: beta-jar-5-august-2023
 ---

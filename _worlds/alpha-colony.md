@@ -1,9 +1,10 @@
 ---
 title: Alpha Colony
 started: 2023-05-13
+deceased: 2023-08-27
 world_type: ants
 environment_type: open_terrestrial
-status: 0 # 0 = alive, 1 = dormant, 2 = deceased
+status: 2 # 0 = alive, 1 = dormant, 2 = deceased
 species: Camponotus pennsylvanicus
 image: the-alpha-colonys-first-outer-world-setup
 ---

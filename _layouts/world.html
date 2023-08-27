@@ -12,6 +12,12 @@ layout: worlds
 	{% when "sealed_aquatic" %}Sealed Aquatic
 	{% endcase %}<br />
 	Created: {{ page.started | date: site.date_natural }}<br />
+	{% if page.deceased %}
+		{% assign deceased = page.deceased | date: "%s" %}
+		{% assign started = page.started | date: "%s" %}
+		{% assign duration = deceased | minus: started | divided_by: 60 | divided_by: 60 | divided_by: 24 %}
+		Deceased: {{ page.deceased | date: site.date_natural }} ({{ duration }} days)<br />
+	{% endif %}
 	Status:
 	{% case page.status %}
 	{% when 0 %}Alive

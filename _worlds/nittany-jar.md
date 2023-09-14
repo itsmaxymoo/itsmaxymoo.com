@@ -2,9 +2,9 @@
 title: Nittany Jar
 started: 2023-08-25
 world_type: ecosphere
-environment_type: sealed_aquatic
+environment_type: open_aquatic
 status: 0 # 0 = alive, 1 = dormant, 2 = deceased
-species: ""
+species: "Aquatic isopods, snails, sewage worms"
 image: nittany-jar-august-2023
 ---
 

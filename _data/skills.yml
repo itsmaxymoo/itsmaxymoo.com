@@ -1,5 +1,7 @@
 - name: Languages
   items:
+    - name: Verilog
+      icon_class: las la-bolt
     - name: C++
       icon_class: devicon-cplusplus-plain
     - name: Java
@@ -55,6 +57,8 @@
       icon_class: devicon-java-plain
     - name: Snipe-IT
       icon_class: las la-box
+    - name: Xilinx Vivado
+      icon_class: las la-bolt
 
 - name: Certifications
   items:

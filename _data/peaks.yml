@@ -210,8 +210,10 @@
     elev: 5367
   - name: Lafayette
     elev: 5260
+    completed: 2024-07-16
   - name: Lincoln
     elev: 5089
+    completed: 2024-07-16
   - name: South Twin
     elev: 4902
   - name: Carter Dome

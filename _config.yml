@@ -14,15 +14,6 @@ collections:
 
   dev_projects:
     output: false
-  
-  worlds:
-    output: true
-    layout: world
-    permalink: /worlds/:title
-  
-  content:
-    output: false
-    permalink: /content/:title/index.html
 
 defaults:
   -

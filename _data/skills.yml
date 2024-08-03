@@ -8,8 +8,8 @@
       icon_class: devicon-java-plain
     - name: JavaScript
       icon_class: devicon-javascript-plain
-    - name: HTML
-      icon_class: devicon-html5-plain
+    - name: Groovy
+      icon_class: devicon-groovy-plain
     - name: Python
       icon_class: devicon-python-plain
     - name: PHP
@@ -22,8 +22,6 @@
       icon_class: las la-database
     - name: JSON
       icon_class: las la-code
-    - name: XML
-      icon_class: las la-code
 
 - name: Technologies
   items:
@@ -31,8 +29,8 @@
       icon_class: devicon-apache-plain
     - name: Git
       icon_class: devicon-git-plain
-    - name: Jetbrains IDEs
-      icon_class: devicon-jetbrains-plain
+    - name: Selenium
+      icon_class: devicon-selenium-plain
     - name: Linux (8 years)
       icon_class: devicon-linux-plain
     - name: Linux (Debian)
@@ -55,8 +53,8 @@
       icon_class: las la-code
     - name: JavaFX
       icon_class: devicon-java-plain
-    - name: Snipe-IT
-      icon_class: las la-box
+    - name: Azure DevOps
+      icon_class: devicon-azuredevops-plain
     - name: Xilinx Vivado
       icon_class: las la-bolt
 
